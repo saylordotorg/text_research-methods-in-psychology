@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Inferential Statistics</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s16-descriptive-statistics.html"><img src="shared/images/batch-left.png"></a> <a href="s16-descriptive-statistics.html">Previous Chapter</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        &nbsp;
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="chapter" id="price_1.0-ch13" version="5.0" lang="en">
+    <h1 class="title editable block">
+<span class="title-prefix">Chapter 13</span> Inferential Statistics</h1>
+    <p class="para editable block" id="price_1.0-ch13_p01">Recall that Matias Mehl and his colleagues, in their study of sex differences in talkativeness, found that the women in their sample spoke a mean of 16,215 words per day and the men a mean of 15,669 words per day (Mehl, Vazire, Ramirez-Esparza, Slatcher, &amp; Pennebaker, 2007).<span class="footnote" id="price_1.0-fn13_001">Mehl, M. R., Vazire, S., Ramirez-Esparza, N., Slatcher, R. B., &amp; Pennebaker, J. W. (2007). Are women really more talkative than men? <em class="emphasis">Science</em>, <em class="emphasis">317</em>, 82.</span> But despite this sex difference in their sample, they concluded that there was no evidence of a sex difference in talkativeness in the population. Recall also that Allen Kanner and his colleagues, in their study of the relationship between daily hassles and symptoms, found a correlation of +.60 in their sample (Kanner, Coyne, Schaefer, &amp; Lazarus, 1981).<span class="footnote" id="price_1.0-fn13_002">Kanner, A. D., Coyne, J. C., Schaefer, C., &amp; Lazarus, R. S. (1981). Comparison of two modes of stress measurement: Daily hassles and uplifts versus major life events. <em class="emphasis">Journal of Behavioral Medicine</em>, <em class="emphasis">4</em>, 1–39.</span> But they concluded that this means there <em class="emphasis">is</em> a relationship between hassles and symptoms in the population. This raises the question of how researchers can say whether their sample result reflects something that is true of the population.</p>
+    <p class="para editable block" id="price_1.0-ch13_p02">The answer to this question is that they use a set of techniques called inferential statistics, which is what this chapter is about. We focus, in particular, on null hypothesis testing, the most common approach to inferential statistics in psychological research. We begin with a conceptual overview of null hypothesis testing, including its purpose and basic logic. Then we look at several null hypothesis testing techniques for drawing conclusions about differences between means and about correlations between quantitative variables. Finally, we consider a few other important ideas related to null hypothesis testing, including some that can be helpful in planning new studies and interpreting results. We also look at some long-standing criticisms of null hypothesis testing and some ways of dealing with these criticisms.</p>
+</div>
+<div class="section" id="price_1.0-ch13_s01" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">13.1</span> Understanding Null Hypothesis Testing</h2>
+    <div class="learning_objectives editable block" id="price_1.0-ch13_s01_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="price_1.0-ch13_s01_l01">
+            <li>Explain the purpose of null hypothesis testing, including the role of sampling error.</li>
+            <li>Describe the basic logic of null hypothesis testing.</li>
+            <li>Describe the role of relationship strength and sample size in determining statistical significance and make reasonable judgments about statistical significance based on these two factors.</li>
+        </ol>
+    </div>
+    <div class="section" id="price_1.0-ch13_s01_s01">
+        <h2 class="title editable block">The Purpose of Null Hypothesis Testing</h2>
+        <p class="para editable block" id="price_1.0-ch13_s01_s01_p01">As we have seen, psychological research typically involves measuring one or more variables for a sample and computing descriptive statistics for that sample. In general, however, the researcher’s goal is not to draw conclusions about that sample but to draw conclusions about the population that the sample was selected from. Thus researchers must use sample statistics to draw conclusions about the corresponding values in the population. These corresponding values in the population are called <span class="margin_term"><a class="glossterm">parameters</a><span class="glossdef">A numerical summary (e.g., mean, standard deviation) of a population. A numerical summary of a sample is called a “statistic.”</span></span>. Imagine, for example, that a researcher measures the number of depressive symptoms exhibited by each of 50 clinically depressed adults and computes the mean number of symptoms. The researcher probably wants to use this sample statistic (the mean number of symptoms for the sample) to draw conclusions about the corresponding population parameter (the mean number of symptoms for clinically depressed adults).</p>
+        <p class="para editable block" id="price_1.0-ch13_s01_s01_p02">Unfortunately, sample statistics are not perfect estimates of their corresponding population parameters. This is because there is a certain amount of random variability in any statistic from sample to sample. The mean number of depressive symptoms might be 8.73 in one sample of clinically depressed adults, 6.45 in a second sample, and 9.44 in a third—even though these samples are selected randomly from the same population. Similarly, the correlation (Pearson’s <em class="emphasis">r</em>) between two variables might be +.24 in one sample, −.04 in a second sample, and +.15 in a third—again, even though these samples are selected randomly from the same population. This random variability in a statistic from sample to sample is called <span class="margin_term"><a class="glossterm">sampling error</a><span class="glossdef">Random variation in a statistic from sample to sample.</span></span>. (Note that the term <em class="emphasis">error</em> here refers to random variability and does not imply that anyone has made a mistake. No one “commits a sampling error.”)</p>
+        <p class="para editable block" id="price_1.0-ch13_s01_s01_p03">One implication of this is that when there is a statistical relationship in a sample, it is not always clear that there is a statistical relationship in the population. A small difference between two group means in a sample might indicate that there is a small difference between the two group means in the population. But it could also be that there is no difference between the means in the population and that the difference in the sample is just a matter of sampling error. Similarly, a Pearson’s <em class="emphasis">r</em> value of −.29 in a sample might mean that there is a negative relationship in the population. But it could also be that there is no relationship in the population and that the relationship in the sample is just a matter of sampling error.</p>
+        <p class="para editable block" id="price_1.0-ch13_s01_s01_p04">In fact, any statistical relationship in a sample can be interpreted in two ways:</p>
+        <ol class="orderedlist editable block" id="price_1.0-ch13_s01_s01_l01">
+            <li>There is a relationship in the population, and the relationship in the sample reflects this.</li>
+            <li>There is no relationship in the population, and the relationship in the sample reflects only sampling error.</li>
+        </ol>
+        <p class="para editable block" id="price_1.0-ch13_s01_s01_p05">The purpose of null hypothesis testing is simply to help researchers decide between these two interpretations.</p>
+    </div>
+    <div class="section" id="price_1.0-ch13_s01_s02">
+        <h2 class="title editable block">The Logic of Null Hypothesis Testing</h2>
+        <p class="para editable block" id="price_1.0-ch13_s01_s02_p01"><span class="margin_term"><a class="glossterm">Null hypothesis testing</a><span class="glossdef">A formal approach to deciding whether a sample relationship is due to chance (the null hypothesis) or reflects a real relationship in the population (the alternative hypothesis).</span></span> is a formal approach to deciding between two interpretations of a statistical relationship in a sample. One interpretation is called the <span class="margin_term"><a class="glossterm">null hypothesis</a><span class="glossdef">The idea that there is no statistical relationship between two variables in the population and that any relationship in a sample is due to chance. Often abbreviated <em class="emphasis">H</em><sub class="subscript">0</sub>.</span></span> (often symbolized <em class="emphasis">H</em><sub class="subscript">0</sub> and read as “H-naught”). This is the idea that there is no relationship in the population and that the relationship in the sample reflects only sampling error. Informally, the null hypothesis is that the sample relationship “occurred by chance.” The other interpretation is called the <span class="margin_term"><a class="glossterm">alternative hypothesis</a><span class="glossdef">The idea that there is a statistical relationship between two variables in the population and that any relationship in a sample reflects that real relationship. Often abbreviated <em class="emphasis">H</em><sub class="subscript">1</sub>.</span></span> (often symbolized as <em class="emphasis">H</em><sub class="subscript">1</sub>). This is the idea that there is a relationship in the population and that the relationship in the sample reflects this relationship in the population.</p>
+        <p class="para editable block" id="price_1.0-ch13_s01_s02_p02">Again, every statistical relationship in a sample can be interpreted in either of these two ways: It might have occurred by chance, or it might reflect a relationship in the population. So researchers need a way to decide between them. Although there are many specific null hypothesis testing techniques, they are all based on the same general logic. The steps are as follows:</p>
+        <ol class="orderedlist editable block" id="price_1.0-ch13_s01_s02_l01">
+            <li>Assume for the moment that the null hypothesis is true. There is no relationship between the variables in the population.</li>
+            <li>Determine how likely the sample relationship would be if the null hypothesis were true.</li>
+            <li>If the sample relationship would be extremely unlikely, then <span class="margin_term"><a class="glossterm">reject the null hypothesis</a><span class="glossdef">In null hypothesis testing, the conclusion that the null hypothesis is false. The sample relationship reflects a real relationship in the population.</span></span> in favor of the alternative hypothesis. If it would not be extremely unlikely, then <span class="margin_term"><a class="glossterm">retain the null hypothesis</a><span class="glossdef">In null hypothesis testing, the tentative conclusion that the null hypothesis is true. The sample relationship is due to chance. Often expressed as “fail to reject the null hypothesis” (although never as “accept the null hypothesis”).</span></span>.</li>
+        </ol>
+        <p class="para editable block" id="price_1.0-ch13_s01_s02_p03">Following this logic, we can begin to understand why Mehl and his colleagues concluded that there is no difference in talkativeness between women and men in the population. In essence, they asked the following question: “If there were no difference in the population, how likely is it that we would find a small difference of <em class="emphasis">d</em> = 0.06 in our sample?” Their answer to this question was that this sample relationship would be fairly likely if the null hypothesis were true. Therefore, they retained the null hypothesis—concluding that there is no evidence of a sex difference in the population. We can also see why Kanner and his colleagues concluded that there is a correlation between hassles and symptoms in the population. They asked, “If the null hypothesis were true, how likely is it that we would find a strong correlation of +.60 in our sample?” Their answer to this question was that this sample relationship would be fairly unlikely if the null hypothesis were true. Therefore, they rejected the null hypothesis in favor of the alternative hypothesis—concluding that there is a positive correlation between these variables in the population.</p>
+        <p class="para editable block" id="price_1.0-ch13_s01_s02_p04">A crucial step in null hypothesis testing is finding the likelihood of the sample result if the null hypothesis were true. This probability is called the <span class="margin_term"><a class="glossterm"><em class="emphasis">p</em> value</a><span class="glossdef">In null hypothesis testing, the probability of a sample result at least as extreme as the one obtained if the null hypothesis were true.</span></span>. A low <em class="emphasis">p</em> value means that the sample result would be unlikely if the null hypothesis were true and leads to the rejection of the null hypothesis. A high <em class="emphasis">p</em> value means that the sample result would be likely if the null hypothesis were true and leads to the retention of the null hypothesis. But how low must the <em class="emphasis">p</em> value be before the sample result is considered unlikely enough to reject the null hypothesis? In null hypothesis testing, this criterion is called <span class="margin_term"><a class="glossterm">α (alpha)</a><span class="glossdef">In null hypothesis testing, the criterion for deciding that a <em class="emphasis">p</em> value is low enough to reject the null hypothesis. In psychological research, it is almost always set to .05.</span></span> and is almost always set to .05. If there is less than a 5% chance of a result as extreme as the sample result if the null hypothesis were true, then the null hypothesis is rejected. When this happens, the result is said to be <span class="margin_term"><a class="glossterm">statistically significant</a><span class="glossdef">Used to describe a result for which the null hypothesis has been rejected.</span></span>. If there is greater than a 5% chance of a result as extreme as the sample result when the null hypothesis is true, then the null hypothesis is retained. This does not necessarily mean that the researcher accepts the null hypothesis as true—only that there is not currently enough evidence to conclude that it is true. Researchers often use the expression “fail to reject the null hypothesis” rather than “retain the null hypothesis,” but they never use the expression “accept the null hypothesis.”</p>
+        <div class="callout editable block" id="price_1.0-ch13_s01_s02_n01">
+            <h3 class="title">The Misunderstood <em class="emphasis bolditalic">p</em> Value</h3>
+            <p class="para" id="price_1.0-ch13_s01_s02_p05">The <em class="emphasis">p</em> value is one of the most misunderstood quantities in psychological research (Cohen, 1994).<span class="footnote" id="price_1.0-fn13_003">Cohen, J. (1994). The world is round: <em class="emphasis">p</em> &lt; .05. <em class="emphasis">American Psychologist, 49</em>, 997–1003.</span> Even professional researchers misinterpret it, and it is not unusual for such misinterpretations to appear in statistics textbooks!</p>
+            <p class="para" id="price_1.0-ch13_s01_s02_p06">The most common misinterpretation is that the <em class="emphasis">p</em> value is the probability that the null hypothesis is true—that the sample result occurred by chance. For example, a misguided researcher might say that because the <em class="emphasis">p</em> value is .02, there is only a 2% chance that the result is due to chance and a 98% chance that it reflects a real relationship in the population. But this is <em class="emphasis">incorrect</em>. The <em class="emphasis">p</em> value is really the probability of a result at least as extreme as the sample result <em class="emphasis">if</em> the null hypothesis <em class="emphasis">were</em> true. So a <em class="emphasis">p</em> value of .02 means that if the null hypothesis were true, a sample result this extreme would occur only 2% of the time.</p>
+            <p class="para" id="price_1.0-ch13_s01_s02_p07">You can avoid this misunderstanding by remembering that the <em class="emphasis">p</em> value is not the probability that any particular <em class="emphasis">hypothesis</em> is true or false. Instead, it is the probability of obtaining the <em class="emphasis">sample result</em> if the null hypothesis were true.</p>
+        </div>
+    </div>
+    <div class="section" id="price_1.0-ch13_s01_s03">
+        <h2 class="title editable block">Role of Sample Size and Relationship Strength</h2>
+        <p class="para editable block" id="price_1.0-ch13_s01_s03_p01">Recall that null hypothesis testing involves answering the question, “If the null hypothesis were true, what is the probability of a sample result as extreme as this one?” In other words, “What is the <em class="emphasis">p</em> value?” It can be helpful to see that the answer to this question depends on just two considerations: the strength of the relationship and the size of the sample. Specifically, the stronger the sample relationship and the larger the sample, the less likely the result would be if the null hypothesis were true. That is, the lower the <em class="emphasis">p</em> value. This should make sense. Imagine a study in which a sample of 500 women is compared with a sample of 500 men in terms of some psychological characteristic, and Cohen’s <em class="emphasis">d</em> is a strong 0.50. If there were really no sex difference in the population, then a result this strong based on such a large sample should seem highly unlikely. Now imagine a similar study in which a sample of three women is compared with a sample of three men, and Cohen’s <em class="emphasis">d</em> is a weak 0.10. If there were no sex difference in the population, then a relationship this weak based on such a small sample should seem likely. And this is precisely why the null hypothesis would be rejected in the first example and retained in the second.</p>
+        <p class="para editable block" id="price_1.0-ch13_s01_s03_p02">Of course, sometimes the result can be weak and the sample large, or the result can be strong and the sample small. In these cases, the two considerations trade off against each other so that a weak result can be statistically significant if the sample is large enough and a strong relationship can be statistically significant even if the sample is small. <a class="xref" href="#price_1.0-ch13_s01_s03_t01">Table 13.1 "How Relationship Strength and Sample Size Combine to Determine Whether a Result Is Statistically Significant"</a> shows roughly how relationship strength and sample size combine to determine whether a sample result is statistically significant. The columns of the table represent the three levels of relationship strength: weak, medium, and strong. The rows represent four sample sizes that can be considered small, medium, large, and extra large in the context of psychological research. Thus each cell in the table represents a combination of relationship strength and sample size. If a cell contains the word <em class="emphasis">Yes</em>, then this combination would be statistically significant for both Cohen’s <em class="emphasis">d</em> and Pearson’s <em class="emphasis">r</em>. If it contains the word <em class="emphasis">No</em>, then it would not be statistically significant for either. There is one cell where the decision for <em class="emphasis">d</em> and <em class="emphasis">r</em> would be different and another where it might be different depending on some additional considerations, which are discussed in <a class="xref" href="price_1.0-ch13_s02#price_1.0-ch13_s02">Section 13.2 "Some Basic Null Hypothesis Tests"</a></p>
+        <div class="table block" id="price_1.0-ch13_s01_s03_t01" frame="all">
+            <p class="title"><span class="title-prefix">Table 13.1</span> How Relationship Strength and Sample Size Combine to Determine Whether a Result Is Statistically Significant</p>
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="3">Relationship strength</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sample Size</td>
+                        <td>Weak</td>
+                        <td>Medium</td>
+                        <td>Strong</td>
+                    </tr>
+                    <tr>
+                        <td>Small (<em class="emphasis">N</em> = 20)</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>
+<p class="para"><em class="emphasis">d</em> = Maybe</p>
+<p class="para"><em class="emphasis">r</em> = Yes</p>
+</td>
+                    </tr>
+                    <tr>
+                        <td>Medium (<em class="emphasis">N</em> = 50)</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Large (<em class="emphasis">N</em> = 100)</td>
+                        <td>
+<p class="para"><em class="emphasis">d</em> = Yes</p>
+<p class="para"><em class="emphasis">r</em> = No</p>
+</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Extra large (<em class="emphasis">N</em> = 500)</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="para editable block" id="price_1.0-ch13_s01_s03_p03">Although <a class="xref" href="#price_1.0-ch13_s01_s03_t01">Table 13.1 "How Relationship Strength and Sample Size Combine to Determine Whether a Result Is Statistically Significant"</a> provides only a rough guideline, it shows very clearly that weak relationships based on medium or small samples are never statistically significant and that strong relationships based on medium or larger samples are always statistically significant. If you keep this in mind, you will often know whether a result is statistically significant based on the descriptive statistics alone. It is extremely useful to be able to develop this kind of intuitive judgment. One reason is that it allows you to develop expectations about how your formal null hypothesis tests are going to come out, which in turn allows you to detect problems in your analyses. For example, if your sample relationship is strong and your sample is medium, then you would expect to reject the null hypothesis. If for some reason your formal null hypothesis test indicates otherwise, then you need to double-check your computations and interpretations. A second reason is that the ability to make this kind of intuitive judgment is an indication that you understand the basic logic of this approach in addition to being able to do the computations.</p>
+    </div>
+    <div class="section" id="price_1.0-ch13_s01_s04">
+        <h2 class="title editable block">Statistical Significance Versus Practical Significance</h2>
+        <p class="para editable block" id="price_1.0-ch13_s01_s04_p01"><a class="xref" href="#price_1.0-ch13_s01_s03_t01">Table 13.1 "How Relationship Strength and Sample Size Combine to Determine Whether a Result Is Statistically Significant"</a> illustrates another extremely important point. A statistically significant result is not necessarily a strong one. Even a very weak result can be statistically significant if it is based on a large enough sample. This is closely related to Janet Shibley Hyde’s argument about sex differences (Hyde, 2007).<span class="footnote" id="price_1.0-fn13_004">Hyde, J. S. (2007). New directions in the study of gender similarities and differences. <em class="emphasis">Current Directions in Psychological Science</em>, <em class="emphasis">16</em>, 259–263.</span> The differences between women and men in mathematical problem solving and leadership ability are statistically significant. But the word <em class="emphasis">significant</em> can cause people to interpret these differences as strong and important—perhaps even important enough to influence the college courses they take or even who they vote for. As we have seen, however, these statistically significant differences are actually quite weak—perhaps even “trivial.”</p>
+        <p class="para editable block" id="price_1.0-ch13_s01_s04_p02">This is why it is important to distinguish between the <em class="emphasis">statistical</em> significance of a result and the <em class="emphasis">practical</em> significance of that result. <span class="margin_term"><a class="glossterm">Practical significance</a><span class="glossdef">The importance of a research result in some real-world context. Research results can be statistically significant without having any practical significance. In clinical practice, practical significance is called “clinical significance.”</span></span> refers to the importance or usefulness of the result in some real-world context. Many sex differences are statistically significant—and may even be interesting for purely scientific reasons—but they are not practically significant. In clinical practice, this same concept is often referred to as “clinical significance.” For example, a study on a new treatment for social phobia might show that it produces a statistically significant positive effect. Yet this effect still might not be strong enough to justify the time, effort, and other costs of putting it into practice—especially if easier and cheaper treatments that work almost as well already exist. Although statistically significant, this result would be said to lack practical or clinical significance.</p>
+        <div class="key_takeaways editable block" id="price_1.0-ch13_s01_s04_n01">
+            <h3 class="title">Key Takeaways</h3>
+            <ul class="itemizedlist" id="price_1.0-ch13_s01_s04_l01">
+                <li>Null hypothesis testing is a formal approach to deciding whether a statistical relationship in a sample reflects a real relationship in the population or is just due to chance.</li>
+                <li>The logic of null hypothesis testing involves assuming that the null hypothesis is true, finding how likely the sample result would be if this assumption were correct, and then making a decision. If the sample result would be unlikely if the null hypothesis were true, then it is rejected in favor of the alternative hypothesis. If it would not be unlikely, then the null hypothesis is retained.</li>
+                <li>The probability of obtaining the sample result if the null hypothesis were true (the <em class="emphasis">p</em> value) is based on two considerations: relationship strength and sample size. Reasonable judgments about whether a sample relationship is statistically significant can often be made by quickly considering these two factors.</li>
+                <li>Statistical significance is not the same as relationship strength or importance. Even weak relationships can be statistically significant if the sample size is large enough. It is important to consider relationship strength and the practical significance of a result in addition to its statistical significance.</li>
+            </ul>
+        </div>
+        <div class="exercises editable block" id="price_1.0-ch13_s01_s04_n02">
+            <h3 class="title">Exercises</h3>
+            <ol class="orderedlist" id="price_1.0-ch13_s01_s04_l02">
+                <li>Discussion: Imagine a study showing that people who eat more broccoli tend to be happier. Explain for someone who knows nothing about statistics why the researchers would conduct a null hypothesis test.</li>
+                <li>
+                    <p class="para">Practice: Use <a class="xref" href="#price_1.0-ch13_s01_s03_t01">Table 13.1 "How Relationship Strength and Sample Size Combine to Determine Whether a Result Is Statistically Significant"</a> to decide whether each of the following results is statistically significant.</p>
+                    <ol class="orderedlist" id="price_1.0-ch13_s01_s04_l03" numeration="loweralpha">
+                        <li>The correlation between two variables is <em class="emphasis">r</em> = −.78 based on a sample size of 137.</li>
+                        <li>The mean score on a psychological characteristic for women is 25 (<em class="emphasis">SD</em> = 5) and the mean score for men is 24 (<em class="emphasis">SD</em> = 5). There were 12 women and 10 men in this study.</li>
+                        <li>In a memory experiment, the mean number of items recalled by the 40 participants in Condition A was 0.50 standard deviations greater than the mean number recalled by the 40 participants in Condition B.</li>
+                        <li>In another memory experiment, the mean scores for participants in Condition A and Condition B came out exactly the same!</li>
+                        <li>A student finds a correlation of <em class="emphasis">r</em> = .04 between the number of units the students in his research methods class are taking and the students’ level of stress.</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
+<div class="section" id="price_1.0-ch13_s02" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">13.2</span> Some Basic Null Hypothesis Tests</h2>
+    <div class="learning_objectives editable block" id="price_1.0-ch13_s02_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="price_1.0-ch13_s02_l01">
+            <li>Conduct and interpret one-sample, dependent-samples, and independent-samples <em class="emphasis">t</em> tests.</li>
+            <li>Interpret the results of one-way, repeated measures, and factorial ANOVAs.</li>
+            <li>Conduct and interpret null hypothesis tests of Pearson’s <em class="emphasis">r</em>.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="price_1.0-ch13_s02_p01">In this section, we look at several common null hypothesis testing procedures. The emphasis here is on providing enough information to allow you to conduct and interpret the most basic versions. In most cases, the online statistical analysis tools mentioned in <a class="xref" href="price_1.0-ch12#price_1.0-ch12">Chapter 12 "Descriptive Statistics"</a> will handle the computations—as will programs such as Microsoft Excel and SPSS.</p>
+    <div class="section" id="price_1.0-ch13_s02_s01">
+        <h2 class="title editable block">The <em class="emphasis">t</em> Test</h2>
+        <p class="para editable block" id="price_1.0-ch13_s02_s01_p01">As we have seen throughout this book, many studies in psychology focus on the difference between two means. The most common null hypothesis test for this type of statistical relationship is the <span class="margin_term"><a class="glossterm"><em class="emphasis">t</em> test</a><span class="glossdef">A family of null hypothesis tests used to compare two means.</span></span>. In this section, we look at three types of <em class="emphasis">t</em> tests that are used for slightly different research designs: the one-sample <em class="emphasis">t</em> test, the dependent-samples <em class="emphasis">t</em> test, and the independent-samples <em class="emphasis">t</em> test.</p>
+        <div class="section" id="price_1.0-ch13_s02_s01_s01">
+            <h2 class="title editable block">One-Sample <em class="emphasis">t</em> Test</h2>
+            <p class="para editable block" id="price_1.0-ch13_s02_s01_s01_p01">The <span class="margin_term"><a class="glossterm">one-sample <em class="emphasis">t</em> test</a><span class="glossdef">A null hypothesis test used to compare one sample mean with a hypothetical population mean that provides an interesting standard of comparison.</span></span> is used to compare a sample mean (<em class="emphasis">M</em>) with a hypothetical population mean (μ<sub class="subscript">0</sub>) that provides some interesting standard of comparison. The null hypothesis is that the mean for the population (µ) is equal to the hypothetical population mean: μ = μ<sub class="subscript">0</sub>. The alternative hypothesis is that the mean for the population is different from the hypothetical population mean: μ <sub class="subscript">≠</sub> μ<sub class="subscript">0</sub>. To decide between these two hypotheses, we need to find the probability of obtaining the sample mean (or one more extreme) if the null hypothesis were true. But finding this <em class="emphasis">p</em> value requires first computing a test statistic called <em class="emphasis">t</em>. (A <span class="margin_term"><a class="glossterm">test statistic</a><span class="glossdef">In null hypothesis testing, a statistic such as <em class="emphasis">t</em> or <em class="emphasis">F</em> that is computed only to help find the <em class="emphasis">p</em> value for the sample result.</span></span> is a statistic that is computed only to help find the <em class="emphasis">p</em> value.) The formula for <em class="emphasis">t</em> is as follows:</p>
+            <div class="informalfigure large block" id="price_1.0-ch13_s02_s01_s01_f03">
+                <img src="section_17/2e0506ffc3da509d2009b36dfa9f873f.jpg">
+            </div>
+            <p class="para editable block" id="price_1.0-ch13_s02_s01_s01_p02">Again, <em class="emphasis">M</em> is the sample mean and µ<sub class="subscript">0</sub> is the hypothetical population mean of interest. <em class="emphasis">SD</em> is the sample standard deviation and <em class="emphasis">N</em> is the sample size.</p>
+            <p class="para editable block" id="price_1.0-ch13_s02_s01_s01_p03">The reason the <em class="emphasis">t</em> statistic (or any test statistic) is useful is that we know how it is distributed when the null hypothesis is true. As shown in <a class="xref" href="#price_1.0-ch13_s02_s01_s01_f01">Figure 13.1 "Distribution of "</a>, this distribution is unimodal and symmetrical, and it has a mean of 0. Its precise shape depends on a statistical concept called the degrees of freedom, which for a one-sample <em class="emphasis">t</em> test is <em class="emphasis">N</em> − 1. (There are 24 degrees of freedom for the distribution shown in <a class="xref" href="#price_1.0-ch13_s02_s01_s01_f01">Figure 13.1 "Distribution of "</a>.) The important point is that knowing this distribution makes it possible to find the <em class="emphasis">p</em> value for any <em class="emphasis">t</em> score. Consider, for example, a <em class="emphasis">t</em> score of +1.50 based on a sample of 25. The probability of a <em class="emphasis">t</em> score at least this extreme is given by the proportion of <em class="emphasis">t</em> scores in the distribution that are at least this extreme. For now, let us define <em class="emphasis">extreme</em> as being far from zero in either direction. Thus the <em class="emphasis">p</em> value is the proportion of <em class="emphasis">t</em> scores that are +1.50 or above <em class="emphasis">or</em> that are −1.50 or below—a value that turns out to be .14.</p>
+            <div class="figure large editable block" id="price_1.0-ch13_s02_s01_s01_f01">
+                <p class="title"><span class="title-prefix">Figure 13.1</span> Distribution of <em class="emphasis">t</em> Scores (With 24 Degrees of Freedom) When the Null Hypothesis Is True</p>
+                <img src="section_17/7bffb75c83485bbf0a3f08783ad55bcb.jpg">
+                <p class="para">The red vertical lines represent the two-tailed critical values, and the green vertical lines the one-tailed critical values when α = .05.</p>
+            </div>
+            <p class="para editable block" id="price_1.0-ch13_s02_s01_s01_p04">Fortunately, we do not have to deal directly with the distribution of <em class="emphasis">t</em> scores. If we were to enter our sample data and hypothetical mean of interest into one of the online statistical tools in <a class="xref" href="price_1.0-ch12#price_1.0-ch12">Chapter 12 "Descriptive Statistics"</a> or into a program like SPSS (Excel does not have a one-sample <em class="emphasis">t</em> test function), the output would include both the <em class="emphasis">t</em> score and the <em class="emphasis">p</em> value. At this point, the rest of the procedure is simple. If <em class="emphasis">p</em> is less than .05, we reject the null hypothesis and conclude that the population mean differs from the hypothetical mean of interest. If <em class="emphasis">p</em> is greater than .05, we retain the null hypothesis and conclude that there is not enough evidence to say that the population mean differs from the hypothetical mean of interest. (Again, technically, we conclude only that we do not have enough evidence to conclude that it <em class="emphasis">does</em> differ.)</p>
+            <p class="para editable block" id="price_1.0-ch13_s02_s01_s01_p05">If we were to compute the <em class="emphasis">t</em> score by hand, we could use a table like <a class="xref" href="#price_1.0-ch13_s02_s01_s01_t01">Table 13.2 "Table of Critical Values of "</a> to make the decision. This table does not provide actual <em class="emphasis">p</em> values. Instead, it provides the <span class="margin_term"><a class="glossterm">critical values</a><span class="glossdef">In null hypothesis testing, the value or values of a test statistic that correspond to a <em class="emphasis">p</em> value of .05 and therefore serve as a cutoff for deciding to reject the null hypothesis.</span></span> of <em class="emphasis">t</em> for different degrees of freedom (<em class="emphasis">df)</em> when α is .05. For now, let us focus on the two-tailed critical values in the last column of the table. Each of these values should be interpreted as a pair of values: one positive and one negative. For example, the two-tailed critical values when there are 24 degrees of freedom are +2.064 and −2.064. These are represented by the red vertical lines in <a class="xref" href="#price_1.0-ch13_s02_s01_s01_f01">Figure 13.1 "Distribution of "</a>. The idea is that any <em class="emphasis">t</em> score below the lower critical value (the left-hand red line in <a class="xref" href="#price_1.0-ch13_s02_s01_s01_f01">Figure 13.1 "Distribution of "</a>) is in the lowest 2.5% of the distribution, while any <em class="emphasis">t</em> score above the upper critical value (the right-hand red line) is in the highest 2.5% of the distribution. This means that any <em class="emphasis">t</em> score beyond the critical value in <em class="emphasis">either</em> direction is in the most extreme 5% of <em class="emphasis">t</em> scores when the null hypothesis is true and therefore has a <em class="emphasis">p</em> value less than .05. Thus if the <em class="emphasis">t</em> score we compute is beyond the critical value in either direction, then we reject the null hypothesis. If the <em class="emphasis">t</em> score we compute is between the upper and lower critical values, then we retain the null hypothesis.</p>
+            <div class="table block" id="price_1.0-ch13_s02_s01_s01_t01" frame="all">
+                <p class="title"><span class="title-prefix">Table 13.2</span> Table of Critical Values of <em class="emphasis">t</em> When α = .05</p>
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th align="right"></th>
+                            <th colspan="2" align="right">Critical value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="right"><em class="emphasis">df</em></td>
+                            <td align="right">One-tailed</td>
+                            <td align="right">Two-tailed</td>
+                        </tr>
+                        <tr>
+                            <td align="right">3</td>
+                            <td align="right">2.353</td>
+                            <td align="right">3.182</td>
+                        </tr>
+                        <tr>
+                            <td align="right">4</td>
+                            <td align="right">2.132</td>
+                            <td align="right">2.776</td>
+                        </tr>
+                        <tr>
+                            <td align="right">5</td>
+                            <td align="right">2.015</td>
+                            <td align="right">2.571</td>
+                        </tr>
+                        <tr>
+                            <td align="right">6</td>
+                            <td align="right">1.943</td>
+                            <td align="right">2.447</td>
+                        </tr>
+                        <tr>
+                            <td align="right">7</td>
+                            <td align="right">1.895</td>
+                            <td align="right">2.365</td>
+                        </tr>
+                        <tr>
+                            <td align="right">8</td>
+                            <td align="right">1.860</td>
+                            <td align="right">2.306</td>
+                        </tr>
+                        <tr>
+                            <td align="right">9</td>
+                            <td align="right">1.833</td>
+                            <td align="right">2.262</td>
+                        </tr>
+                        <tr>
+                            <td align="right">10</td>
+                            <td align="right">1.812</td>
+                            <td align="right">2.228</td>
+                        </tr>
+                        <tr>
+                            <td align="right">11</td>
+                            <td align="right">1.796</td>
+                            <td align="right">2.201</td>
+                        </tr>
+                        <tr>
+                            <td align="right">12</td>
+                            <td align="right">1.782</td>
+                            <td align="right">2.179</td>
+                        </tr>
+                        <tr>
+                            <td align="right">13</td>
+                            <td align="right">1.771</td>
+                            <td align="right">2.160</td>
+                        </tr>
+                        <tr>
+                            <td align="right">14</td>
+                            <td align="right">1.761</td>
+                            <td align="right">2.145</td>
+                        </tr>
+                        <tr>
+                            <td align="right">15</td>
+                            <td align="right">1.753</td>
+                            <td align="right">2.131</td>
+                        </tr>
+                        <tr>
+                            <td align="right">16</td>
+                            <td align="right">1.746</td>
+                            <td align="right">2.120</td>
+                        </tr>
+                        <tr>
+                            <td align="right">17</td>
+                            <td align="right">1.740</td>
+                            <td align="right">2.110</td>
+                        </tr>
+                        <tr>
+                            <td align="right">18</td>
+                            <td align="right">1.734</td>
+                            <td align="right">2.101</td>
+                        </tr>
+                        <tr>
+                            <td align="right">19</td>
+                            <td align="right">1.729</td>
+                            <td align="right">2.093</td>
+                        </tr>
+                        <tr>
+                            <td align="right">20</td>
+                            <td align="right">1.725</td>
+                            <td align="right">2.086</td>
+                        </tr>
+                        <tr>
+                            <td align="right">21</td>
+                            <td align="right">1.721</td>
+                            <td align="right">2.080</td>
+                        </tr>
+                        <tr>
+                            <td align="right">22</td>
+                            <td align="right">1.717</td>
+                            <td align="right">2.074</td>
+                        </tr>
+                        <tr>
+                            <td align="right">23</td>
+                            <td align="right">1.714</td>
+                            <td align="right">2.069</td>
+                        </tr>
+                        <tr>
+                            <td align="right">24</td>
+                            <td align="right">1.711</td>
+                            <td align="right">2.064</td>
+                        </tr>
+                        <tr>
+                            <td align="right">25</td>
+                            <td align="right">1.708</td>
+                            <td align="right">2.060</td>
+                        </tr>
+                        <tr>
+                            <td align="right">30</td>
+                            <td align="right">1.697</td>
+                            <td align="right">2.042</td>
+                        </tr>
+                        <tr>
+                            <td align="right">35</td>
+                            <td align="right">1.690</td>
+                            <td align="right">2.030</td>
+                        </tr>
+                        <tr>
+                            <td align="right">40</td>
+                            <td align="right">1.684</td>
+                            <td align="right">2.021</td>
+                        </tr>
+                        <tr>
+                            <td align="right">45</td>
+                            <td align="right">1.679</td>
+                            <td align="right">2.014</td>
+                        </tr>
+                        <tr>
+                            <td align="right">50</td>
+                            <td align="right">1.676</td>
+                            <td align="right">2.009</td>
+                        </tr>
+                        <tr>
+                            <td align="right">60</td>
+                            <td align="right">1.671</td>
+                            <td align="right">2.000</td>
+                        </tr>
+                        <tr>
+                            <td align="right">70</td>
+                            <td align="right">1.667</td>
+                            <td align="right">1.994</td>
+                        </tr>
+                        <tr>
+                            <td align="right">80</td>
+                            <td align="right">1.664</td>
+                            <td align="right">1.990</td>
+                        </tr>
+                        <tr>
+                            <td align="right">90</td>
+                            <td align="right">1.662</td>
+                            <td align="right">1.987</td>
+                        </tr>
+                        <tr>
+                            <td align="right">100</td>
+                            <td align="right">1.660</td>
+                            <td align="right">1.984</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="para editable block" id="price_1.0-ch13_s02_s01_s01_p06">Thus far, we have considered what is called a <span class="margin_term"><a class="glossterm">two-tailed test</a><span class="glossdef">A null hypothesis test (e.g., a <em class="emphasis">t</em> test or test of Pearson’s <em class="emphasis">r</em>) in which the null hypothesis is rejected if the sample result is extreme in either direction. Used when the researcher does not have a strong expectation about the direction of the relationship.</span></span>, where we reject the null hypothesis if the <em class="emphasis">t</em> score for the sample is extreme in either direction. This makes sense when we believe that the sample mean might differ from the hypothetical population mean but we do not have good reason to expect the difference to go in a particular direction. But it is also possible to do a <span class="margin_term"><a class="glossterm">one-tailed test</a><span class="glossdef">A null hypothesis test (e.g., a <em class="emphasis">t</em> test or test of Pearson’s <em class="emphasis">r</em>) in which the null hypothesis is rejected only if the sample result is extreme in one direction specified before the data are collected. Used when the researcher has a strong expectation about the direction of the relationship.</span></span>, where we reject the null hypothesis only if the <em class="emphasis">t</em> score for the sample is extreme in one direction that we specify before collecting the data. This makes sense when we have good reason to expect the sample mean will differ from the hypothetical population mean in a particular direction.</p>
+            <p class="para editable block" id="price_1.0-ch13_s02_s01_s01_p07">Here is how it works. Each one-tailed critical value in <a class="xref" href="#price_1.0-ch13_s02_s01_s01_t01">Table 13.2 "Table of Critical Values of "</a> can again be interpreted as a pair of values: one positive and one negative. A <em class="emphasis">t</em> score below the lower critical value is in the lowest 5% of the distribution, and a <em class="emphasis">t</em> score above the upper critical value is in the highest 5% of the distribution. For 24 degrees of freedom, these values are −1.711 and +1.711. (These are represented by the green vertical lines in <a class="xref" href="#price_1.0-ch13_s02_s01_s01_f01">Figure 13.1 "Distribution of "</a>.) However, for a one-tailed test, we must decide before collecting data whether we expect the sample mean to be lower than the hypothetical population mean, in which case we would use only the lower critical value, or we expect the sample mean to be greater than the hypothetical population mean, in which case we would use only the upper critical value. Notice that we still reject the null hypothesis when the <em class="emphasis">t</em> score for our sample is in the most extreme 5% of the t scores we would expect if the null hypothesis were true—so α remains at .05. We have simply redefined <em class="emphasis">extreme</em> to refer only to one tail of the distribution. The advantage of the one-tailed test is that critical values are less extreme. If the sample mean differs from the hypothetical population mean in the expected direction, then we have a better chance of rejecting the null hypothesis. The disadvantage is that if the sample mean differs from the hypothetical population mean in the unexpected direction, then there is no chance at all of rejecting the null hypothesis.</p>
+            <div class="section" id="price_1.0-ch13_s02_s01_s01_s01">
+                <h2 class="title editable block">Example One-Sample <em class="emphasis">t</em> Test</h2>
+                <p class="para editable block" id="price_1.0-ch13_s02_s01_s01_s01_p01">Imagine that a health psychologist is interested in the accuracy of college students’ estimates of the number of calories in a chocolate chip cookie. He shows the cookie to a sample of 10 students and asks each one to estimate the number of calories in it. Because the actual number of calories in the cookie is 250, this is the hypothetical population mean of interest (µ<sub class="subscript">0</sub>). The null hypothesis is that the mean estimate for the population (μ) is 250. Because he has no real sense of whether the students will underestimate or overestimate the number of calories, he decides to do a two-tailed test. Now imagine further that the participants’ actual estimates are as follows:</p>
+                <span class="informalequation block"><span class="mathphrase">250, 280, 200, 150, 175, 200, 200, 220, 180, 250.</span></span>
+                <p class="para editable block" id="price_1.0-ch13_s02_s01_s01_s01_p02">The mean estimate for the sample (<em class="emphasis">M</em>) is 212.00 calories and the standard deviation (<em class="emphasis">SD</em>) is 39.17. The health psychologist can now compute the <em class="emphasis">t</em> score for his sample:</p>
+                <div class="informalfigure large block" id="price_1.0-ch13_s02_s01_s01_s01_f01">
+                    <img src="section_17/b41e3576f687a44e8073b7e365270682.jpg">
+                </div>
+                <p class="para editable block" id="price_1.0-ch13_s02_s01_s01_s01_p03">If he enters the data into one of the online analysis tools or uses SPSS, it would also tell him that the two-tailed <em class="emphasis">p</em> value for this <em class="emphasis">t</em> score (with 10 − 1 = 9 degrees of freedom) is .013. Because this is less than .05, the health psychologist would reject the null hypothesis and conclude that college students tend to underestimate the number of calories in a chocolate chip cookie. If he computes the <em class="emphasis">t</em> score by hand, he could look at <a class="xref" href="#price_1.0-ch13_s02_s01_s01_t01">Table 13.2 "Table of Critical Values of "</a> and see that the critical value of <em class="emphasis">t</em> for a two-tailed test with 9 degrees of freedom is ±2.262. The fact that his <em class="emphasis">t</em> score was more extreme than this critical value would tell him that his <em class="emphasis">p</em> value is less than .05 and that he should reject the null hypothesis.</p>
+                <p class="para editable block" id="price_1.0-ch13_s02_s01_s01_s01_p04">Finally, if this researcher had gone into this study with good reason to expect that college students underestimate the number of calories, then he could have done a one-tailed test instead of a two-tailed test. The only thing this would change is the critical value, which would be −1.833. This slightly less extreme value would make it a bit easier to reject the null hypothesis. However, if it turned out that college students overestimate the number of calories—no matter how much they overestimate it—the researcher would not have been able to reject the null hypothesis.</p>
+            </div>
+        </div>
+        <div class="section" id="price_1.0-ch13_s02_s01_s02">
+            <h2 class="title editable block">The Dependent-Samples <em class="emphasis">t</em> Test</h2>
+            <p class="para editable block" id="price_1.0-ch13_s02_s01_s02_p01">The <span class="margin_term"><a class="glossterm">dependent-samples <em class="emphasis">t</em> test</a><span class="glossdef">A null hypothesis test used to compare two means for one sample measured at two different times or under two different conditions—as in a pretest-posttest or within-subjects design.</span></span> (sometimes called the paired-samples <em class="emphasis">t</em> test) is used to compare two means for the same sample tested at two different times or under two different conditions. This makes it appropriate for pretest-posttest designs or within-subjects experiments. The null hypothesis is that the means at the two times or under the two conditions are the same in the population. The alternative hypothesis is that they are not the same. This test can also be one-tailed if the researcher has good reason to expect the difference goes in a particular direction.</p>
+            <p class="para editable block" id="price_1.0-ch13_s02_s01_s02_p02">It helps to think of the dependent-samples <em class="emphasis">t</em> test as a special case of the one-sample <em class="emphasis">t</em> test. However, the first step in the dependent-samples <em class="emphasis">t</em> test is to reduce the two scores for each participant to a single <span class="margin_term"><a class="glossterm">difference score</a><span class="glossdef">The difference between an individual’s score at one time or under one condition and that individual’s score at a second time or under a second condition. The dependent-samples <em class="emphasis">t</em> test is in essence a one-sample <em class="emphasis">t</em> test on a set of difference scores.</span></span> by taking the difference between them. At this point, the dependent-samples <em class="emphasis">t</em> test becomes a one-sample <em class="emphasis">t</em> test on the difference scores. The hypothetical population mean (µ<sub class="subscript">0</sub>) of interest is 0 because this is what the mean difference score would be if there were no difference on average between the two times or two conditions. We can now think of the null hypothesis as being that the mean difference score in the population is 0 (µ<sub class="subscript">0</sub> = 0) and the alternative hypothesis as being that the mean difference score in the population is not 0 (µ<sub class="subscript">0</sub> ≠ 0).</p>
+            <div class="section" id="price_1.0-ch13_s02_s01_s02_s01">
+                <h2 class="title editable block">Example Dependent-Samples <em class="emphasis">t</em> Test</h2>
+                <p class="para editable block" id="price_1.0-ch13_s02_s01_s02_s01_p01">Imagine that the health psychologist now knows that people tend to underestimate the number of calories in junk food and has developed a short training program to improve their estimates. To test the effectiveness of this program, he conducts a pretest-posttest study in which 10 participants estimate the number of calories in a chocolate chip cookie before the training program and then again afterward. Because he expects the program to increase the participants’ estimates, he decides to do a one-tailed test. Now imagine further that the pretest estimates are</p>
+                <span class="informalequation block"><span class="mathphrase">230, 250, 280, 175, 150, 200, 180, 210, 220, 190</span></span>
+                <p class="para editable block" id="price_1.0-ch13_s02_s01_s02_s01_p02">and that the posttest estimates (for the same participants in the same order) are</p>
+                <span class="informalequation block"><span class="mathphrase">250, 260, 250, 200, 160, 200, 200, 180, 230, 240.</span></span>
+                <p class="para editable block" id="price_1.0-ch13_s02_s01_s02_s01_p03">The difference scores, then, are as follows:</p>
+                <span class="informalequation block"><span class="mathphrase">+20, +10, −30, +25, +10, 0, +20, −30, +10, +50.</span></span>
+                <p class="para editable block" id="price_1.0-ch13_s02_s01_s02_s01_p04">Note that it does not matter whether the first set of scores is subtracted from the second or the second from the first as long as it is done the same way for all participants. In this example, it makes sense to subtract the pretest estimates from the posttest estimates so that positive difference scores mean that the estimates went up after the training and negative difference scores mean the estimates went down.</p>
+                <p class="para editable block" id="price_1.0-ch13_s02_s01_s02_s01_p05">The mean of the difference scores is 8.50 with a standard deviation of 27.27. The health psychologist can now compute the <em class="emphasis">t</em> score for his sample as follows:</p>
+                <div class="informalfigure large block" id="price_1.0-ch13_s02_s01_s02_s01_f01">
+                    <img src="section_17/821ace1c45c5f29b048c5b2a7c8f0b12.jpg">
+                </div>
+                <p class="para editable block" id="price_1.0-ch13_s02_s01_s02_s01_p06">If he enters the data into one of the online analysis tools or uses Excel or SPSS, it would tell him that the one-tailed <em class="emphasis">p</em> value for this <em class="emphasis">t</em> score (again with 10 − 1 = 9 degrees of freedom) is .148. Because this is greater than .05, he would retain the null hypothesis and conclude that the training program does not increase people’s calorie estimates. If he were to compute the <em class="emphasis">t</em> score by hand, he could look at <a class="xref" href="#price_1.0-ch13_s02_s01_s01_t01">Table 13.2 "Table of Critical Values of "</a> and see that the critical value of <em class="emphasis">t</em> for a one-tailed test with 9 degrees of freedom is +1.833. (It is positive this time because he was expecting a positive mean difference score.) The fact that his <em class="emphasis">t</em> score was less extreme than this critical value would tell him that his <em class="emphasis">p</em> value is greater than .05 and that he should fail to reject the null hypothesis.</p>
+            </div>
+        </div>
+        <div class="section" id="price_1.0-ch13_s02_s01_s03">
+            <h2 class="title editable block">The Independent-Samples <em class="emphasis">t</em> Test</h2>
+            <p class="para editable block" id="price_1.0-ch13_s02_s01_s03_p01">The <span class="margin_term"><a class="glossterm">independent-samples <em class="emphasis">t</em> test</a><span class="glossdef">A null hypothesis test used to compare means for two separate samples—as in a between-subjects design.</span></span> is used to compare the means of two separate samples (<em class="emphasis">M</em><sub class="subscript"><em class="emphasis">1</em></sub> and <em class="emphasis">M</em><sub class="subscript"><em class="emphasis">2</em></sub>). The two samples might have been tested under different conditions in a between-subjects experiment, or they could be preexisting groups in a correlational design (e.g., women and men, extroverts and introverts). The null hypothesis is that the means of the two populations are the same: µ<sub class="subscript">1</sub> = µ<sub class="subscript">2</sub>. The alternative hypothesis is that they are not the same: µ<sub class="subscript">1</sub> ≠ µ<sub class="subscript">2</sub>. Again, the test can be one-tailed if the researcher has good reason to expect the difference goes in a particular direction.</p>
+            <p class="para editable block" id="price_1.0-ch13_s02_s01_s03_p02">The <em class="emphasis">t</em> statistic here is a bit more complicated because it must take into account two sample means, two standard deviations, and two sample sizes. The formula is as follows:</p>
+            <div class="informalfigure large block" id="price_1.0-ch13_s02_s01_s03_f02">
+                <img src="section_17/c442cc8aae6e82f03f257bc22ec4daa6.jpg">
+            </div>
+            <p class="para editable block" id="price_1.0-ch13_s02_s01_s03_p03">Notice that this formula includes squared standard deviations (the variances) that appear inside the square root symbol. Also, lowercase <em class="emphasis">n</em><sub class="subscript"><em class="emphasis">1</em></sub> and <em class="emphasis">n</em><sub class="subscript"><em class="emphasis">2</em></sub> refer to the sample sizes in the two groups or condition (as opposed to capital <em class="emphasis">N</em>, which generally refers to the total sample size). The only additional thing to know here is that there are <em class="emphasis">N</em> − 2 degrees of freedom for the independent-samples <em class="emphasis">t</em> test.</p>
+            <div class="section" id="price_1.0-ch13_s02_s01_s03_s01">
+                <h2 class="title editable block">Example Independent-Samples <em class="emphasis">t</em> Test</h2>
+                <p class="para editable block" id="price_1.0-ch13_s02_s01_s03_s01_p01">Now the health psychologist wants to compare the calorie estimates of people who regularly eat junk food with the estimates of people who rarely eat junk food. He believes the difference could come out in either direction so he decides to conduct a two-tailed test. He collects data from a sample of eight participants who eat junk food regularly and seven participants who rarely eat junk food. The data are as follows:</p>
+                <p class="para block">  </p>
+                <p class="para editable block" id="price_1.0-ch13_s02_s01_s03_s01_p02">Junk food eaters: 180, 220, 150, 85, 200, 170, 150, 190</p>
+                <p class="para editable block" id="price_1.0-ch13_s02_s01_s03_s01_p03">Non–junk food eaters: 200, 240, 190, 175, 200, 300, 240</p>
+                <p class="para block">  </p>
+                <p class="para editable block" id="price_1.0-ch13_s02_s01_s03_s01_p04">The mean for the junk food eaters is 220.71 with a standard deviation of 41.23. The mean for the non–junk food eaters is 168.12 with a standard deviation of 42.66. He can now compute his <em class="emphasis">t</em> score as follows:</p>
+                <div class="informalfigure large block" id="price_1.0-ch13_s02_s01_s03_s01_f01">
+                    <img src="section_17/125267e5461da13b79bcbd6681982667.jpg">
+                </div>
+                <p class="para editable block" id="price_1.0-ch13_s02_s01_s03_s01_p05">If he enters the data into one of the online analysis tools or uses Excel or SPSS, it would tell him that the two-tailed <em class="emphasis">p</em> value for this <em class="emphasis">t</em> score (with 15 − 2 = 13 degrees of freedom) is .015. Because this is less than .05, the health psychologist would reject the null hypothesis and conclude that people who eat junk food regularly make lower calorie estimates than people who eat it rarely. If he were to compute the <em class="emphasis">t</em> score by hand, he could look at <a class="xref" href="#price_1.0-ch13_s02_s01_s01_t01">Table 13.2 "Table of Critical Values of "</a> and see that the critical value of <em class="emphasis">t</em> for a two-tailed test with 13 degrees of freedom is ±2.160. The fact that his <em class="emphasis">t</em> score was more extreme than this critical value would tell him that his <em class="emphasis">p</em> value is less than .05 and that he should fail to retain the null hypothesis.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="price_1.0-ch13_s02_s02">
+        <h2 class="title editable block">The Analysis of Variance</h2>
+        <p class="para editable block" id="price_1.0-ch13_s02_s02_p01">When there are more than two groups or condition means to be compared, the most common null hypothesis test is the <span class="margin_term"><a class="glossterm">analysis of variance (ANOVA)</a><span class="glossdef">A null hypothesis test used to compare means for more than two groups or conditions.</span></span>. In this section, we look primarily at the <span class="margin_term"><a class="glossterm">one-way ANOVA</a><span class="glossdef">A null hypothesis test used to compare more than two means in a between-subjects design with one independent variable.</span></span>, which is used for between-subjects designs with a single independent variable. We then briefly consider some other versions of the ANOVA that are used for within-subjects and factorial research designs.</p>
+        <div class="section" id="price_1.0-ch13_s02_s02_s01">
+            <h2 class="title editable block">One-Way ANOVA</h2>
+            <p class="para editable block" id="price_1.0-ch13_s02_s02_s01_p01">The one-way ANOVA is used to compare the means of more than two samples (<em class="emphasis">M1</em>, <em class="emphasis">M</em><sub class="subscript"><em class="emphasis">2</em></sub>…<em class="emphasis">M</em><sub class="subscript"><em class="emphasis">G</em></sub>) in a between-subjects design. The null hypothesis is that all the means are equal in the population: µ<sub class="subscript">1</sub>= µ<sub class="subscript">2</sub> =…= µ<sub class="subscript">G</sub>. The alternative hypothesis is that not all the means in the population are equal.</p>
+            <p class="para editable block" id="price_1.0-ch13_s02_s02_s01_p02">The test statistic for the ANOVA is called <em class="emphasis">F</em>. It is a ratio of two estimates of the population variance based on the sample data. One estimate of the population variance is called the <span class="margin_term"><a class="glossterm">mean squares between groups (<em class="emphasis">MS</em><sub class="subscript"><em class="emphasis">B</em></sub>)</a><span class="glossdef">In an analysis of variance, an estimate for the population variance based only on differences among the group or condition means.</span></span> and is based on the differences among the sample means. The other is called the <span class="margin_term"><a class="glossterm">mean squares within groups (<em class="emphasis">MS</em><sub class="subscript"><em class="emphasis">W</em></sub>)</a><span class="glossdef">In an analysis of variance, an estimate of the population variance based on the variability within each group or condition.</span></span> and is based on the differences among the scores within each group. The <em class="emphasis">F</em> statistic is the ratio of the <em class="emphasis">MS</em><sub class="subscript"><em class="emphasis">B</em></sub> to the <em class="emphasis">MS</em><sub class="subscript"><em class="emphasis">W</em></sub> and can therefore be expressed as follows:</p>
+            <span class="informalequation block"><math xml:id="price_1.0-13_m006" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><mfrac><mrow><mi>M</mi><msub><mi>S</mi><mi>B</mi></msub></mrow><mrow><mi>M</mi><msub><mi>S</mi><mi>W</mi></msub></mrow></mfrac></mrow><mtext>.</mtext></semantics></math></span>
+            <p class="para editable block" id="price_1.0-ch13_s02_s02_s01_p03">Again, the reason that <em class="emphasis">F</em> is useful is that we know how it is distributed when the null hypothesis is true. As shown in <a class="xref" href="#price_1.0-ch13_s02_s02_s01_f01">Figure 13.2 "Distribution of the "</a>, this distribution is unimodal and positively skewed with values that cluster around 1. The precise shape of the distribution depends on both the number of groups and the sample size, and there is a degrees of freedom value associated with each of these. The between-groups degrees of freedom is the number of groups minus one: <em class="emphasis">df</em><sub class="subscript"><em class="emphasis">B</em></sub> = (<em class="emphasis">G</em> − 1). The within-groups degrees of freedom is the total sample size minus the number of groups: <em class="emphasis">df</em><sub class="subscript"><em class="emphasis">W</em></sub> = <em class="emphasis">N</em> − <em class="emphasis">G</em>. Again, knowing the distribution of <em class="emphasis">F</em> when the null hypothesis is true allows us to find the <em class="emphasis">p</em> value.</p>
+            <div class="figure large large-height editable block" id="price_1.0-ch13_s02_s02_s01_f01">
+                <p class="title"><span class="title-prefix">Figure 13.2</span> Distribution of the <em class="emphasis">F</em> Ratio With 2 and 37 Degrees of Freedom When the Null Hypothesis Is True</p>
+                <img src="section_17/2a8c35892ee84b9a536f12ece8f6c540.jpg">
+                <p class="para">The red vertical line represents the critical value when α is .05.</p>
+            </div>
+            <p class="para editable block" id="price_1.0-ch13_s02_s02_s01_p04">The online tools in <a class="xref" href="price_1.0-ch12#price_1.0-ch12">Chapter 12 "Descriptive Statistics"</a> and statistical software such as Excel and SPSS will compute <em class="emphasis">F</em> and find the <em class="emphasis">p</em> value. If <em class="emphasis">p</em> is less than .05, then we reject the null hypothesis and conclude that there are differences among the group means in the population. If <em class="emphasis">p</em> is greater than .05, then we retain the null hypothesis and conclude that there is not enough evidence to say that there are differences. In the unlikely event that we would compute <em class="emphasis">F</em> by hand, we can use a table of critical values like <a class="xref" href="#price_1.0-ch13_s02_s02_s01_t01">Table 13.3 "Table of Critical Values of "</a> to make the decision. The idea is that any <em class="emphasis">F</em> ratio greater than the critical value has a <em class="emphasis">p</em> value of less than .05. Thus if the <em class="emphasis">F</em> ratio we compute is beyond the critical value, then we reject the null hypothesis. If the F ratio we compute is less than the critical value, then we retain the null hypothesis.</p>
+            <div class="table block" id="price_1.0-ch13_s02_s02_s01_t01" frame="all">
+                <p class="title"><span class="title-prefix">Table 13.3</span> Table of Critical Values of <em class="emphasis">F</em> When α = .05</p>
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th colspan="4" align="right">
+<em class="emphasis">df</em><sub class="subscript"><em class="emphasis">B</em></sub>
+</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="right">
+<em class="emphasis">df</em><sub class="subscript"><em class="emphasis">W</em></sub>
+</td>
+                            <td align="right">2</td>
+                            <td align="right">3</td>
+                            <td align="right">4</td>
+                        </tr>
+                        <tr>
+                            <td align="right">8</td>
+                            <td align="right">4.459</td>
+                            <td align="right">4.066</td>
+                            <td align="right">3.838</td>
+                        </tr>
+                        <tr>
+                            <td align="right">9</td>
+                            <td align="right">4.256</td>
+                            <td align="right">3.863</td>
+                            <td align="right">3.633</td>
+                        </tr>
+                        <tr>
+                            <td align="right">10</td>
+                            <td align="right">4.103</td>
+                            <td align="right">3.708</td>
+                            <td align="right">3.478</td>
+                        </tr>
+                        <tr>
+                            <td align="right">11</td>
+                            <td align="right">3.982</td>
+                            <td align="right">3.587</td>
+                            <td align="right">3.357</td>
+                        </tr>
+                        <tr>
+                            <td align="right">12</td>
+                            <td align="right">3.885</td>
+                            <td align="right">3.490</td>
+                            <td align="right">3.259</td>
+                        </tr>
+                        <tr>
+                            <td align="right">13</td>
+                            <td align="right">3.806</td>
+                            <td align="right">3.411</td>
+                            <td align="right">3.179</td>
+                        </tr>
+                        <tr>
+                            <td align="right">14</td>
+                            <td align="right">3.739</td>
+                            <td align="right">3.344</td>
+                            <td align="right">3.112</td>
+                        </tr>
+                        <tr>
+                            <td align="right">15</td>
+                            <td align="right">3.682</td>
+                            <td align="right">3.287</td>
+                            <td align="right">3.056</td>
+                        </tr>
+                        <tr>
+                            <td align="right">16</td>
+                            <td align="right">3.634</td>
+                            <td align="right">3.239</td>
+                            <td align="right">3.007</td>
+                        </tr>
+                        <tr>
+                            <td align="right">17</td>
+                            <td align="right">3.592</td>
+                            <td align="right">3.197</td>
+                            <td align="right">2.965</td>
+                        </tr>
+                        <tr>
+                            <td align="right">18</td>
+                            <td align="right">3.555</td>
+                            <td align="right">3.160</td>
+                            <td align="right">2.928</td>
+                        </tr>
+                        <tr>
+                            <td align="right">19</td>
+                            <td align="right">3.522</td>
+                            <td align="right">3.127</td>
+                            <td align="right">2.895</td>
+                        </tr>
+                        <tr>
+                            <td align="right">20</td>
+                            <td align="right">3.493</td>
+                            <td align="right">3.098</td>
+                            <td align="right">2.866</td>
+                        </tr>
+                        <tr>
+                            <td align="right">21</td>
+                            <td align="right">3.467</td>
+                            <td align="right">3.072</td>
+                            <td align="right">2.840</td>
+                        </tr>
+                        <tr>
+                            <td align="right">22</td>
+                            <td align="right">3.443</td>
+                            <td align="right">3.049</td>
+                            <td align="right">2.817</td>
+                        </tr>
+                        <tr>
+                            <td align="right">23</td>
+                            <td align="right">3.422</td>
+                            <td align="right">3.028</td>
+                            <td align="right">2.796</td>
+                        </tr>
+                        <tr>
+                            <td align="right">24</td>
+                            <td align="right">3.403</td>
+                            <td align="right">3.009</td>
+                            <td align="right">2.776</td>
+                        </tr>
+                        <tr>
+                            <td align="right">25</td>
+                            <td align="right">3.385</td>
+                            <td align="right">2.991</td>
+                            <td align="right">2.759</td>
+                        </tr>
+                        <tr>
+                            <td align="right">30</td>
+                            <td align="right">3.316</td>
+                            <td align="right">2.922</td>
+                            <td align="right">2.690</td>
+                        </tr>
+                        <tr>
+                            <td align="right">35</td>
+                            <td align="right">3.267</td>
+                            <td align="right">2.874</td>
+                            <td align="right">2.641</td>
+                        </tr>
+                        <tr>
+                            <td align="right">40</td>
+                            <td align="right">3.232</td>
+                            <td align="right">2.839</td>
+                            <td align="right">2.606</td>
+                        </tr>
+                        <tr>
+                            <td align="right">45</td>
+                            <td align="right">3.204</td>
+                            <td align="right">2.812</td>
+                            <td align="right">2.579</td>
+                        </tr>
+                        <tr>
+                            <td align="right">50</td>
+                            <td align="right">3.183</td>
+                            <td align="right">2.790</td>
+                            <td align="right">2.557</td>
+                        </tr>
+                        <tr>
+                            <td align="right">55</td>
+                            <td align="right">3.165</td>
+                            <td align="right">2.773</td>
+                            <td align="right">2.540</td>
+                        </tr>
+                        <tr>
+                            <td align="right">60</td>
+                            <td align="right">3.150</td>
+                            <td align="right">2.758</td>
+                            <td align="right">2.525</td>
+                        </tr>
+                        <tr>
+                            <td align="right">65</td>
+                            <td align="right">3.138</td>
+                            <td align="right">2.746</td>
+                            <td align="right">2.513</td>
+                        </tr>
+                        <tr>
+                            <td align="right">70</td>
+                            <td align="right">3.128</td>
+                            <td align="right">2.736</td>
+                            <td align="right">2.503</td>
+                        </tr>
+                        <tr>
+                            <td align="right">75</td>
+                            <td align="right">3.119</td>
+                            <td align="right">2.727</td>
+                            <td align="right">2.494</td>
+                        </tr>
+                        <tr>
+                            <td align="right">80</td>
+                            <td align="right">3.111</td>
+                            <td align="right">2.719</td>
+                            <td align="right">2.486</td>
+                        </tr>
+                        <tr>
+                            <td align="right">85</td>
+                            <td align="right">3.104</td>
+                            <td align="right">2.712</td>
+                            <td align="right">2.479</td>
+                        </tr>
+                        <tr>
+                            <td align="right">90</td>
+                            <td align="right">3.098</td>
+                            <td align="right">2.706</td>
+                            <td align="right">2.473</td>
+                        </tr>
+                        <tr>
+                            <td align="right">95</td>
+                            <td align="right">3.092</td>
+                            <td align="right">2.700</td>
+                            <td align="right">2.467</td>
+                        </tr>
+                        <tr>
+                            <td align="right">100</td>
+                            <td align="right">3.087</td>
+                            <td align="right">2.696</td>
+                            <td align="right">2.463</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="section" id="price_1.0-ch13_s02_s02_s01_s01">
+                <h2 class="title editable block">Example One-Way ANOVA</h2>
+                <p class="para editable block" id="price_1.0-ch13_s02_s02_s01_s01_p01">Imagine that the health psychologist wants to compare the calorie estimates of psychology majors, nutrition majors, and professional dieticians. He collects the following data:</p>
+                <span class="informalequation block"><span class="mathphrase">Psych majors: 200, 180, 220, 160, 150, 200, 190, 200</span></span>
+                <span class="informalequation block"><span class="mathphrase">Nutrition majors: 190, 220, 200, 230, 160, 150, 200, 210, 195</span></span>
+                <span class="informalequation block"><span class="mathphrase">Dieticians: 220, 250, 240, 275, 250, 230, 200, 240</span></span>
+                <p class="para editable block" id="price_1.0-ch13_s02_s02_s01_s01_p02">The means are 187.50 (<em class="emphasis">SD</em> = 23.14), 195.00 (<em class="emphasis">SD</em> = 27.77), and 238.13 (<em class="emphasis">SD</em> = 22.35), respectively. So it appears that dieticians made substantially more accurate estimates on average. The researcher would almost certainly enter these data into a program such as Excel or SPSS, which would compute <em class="emphasis">F</em> for him and find the <em class="emphasis">p</em> value. <a class="xref" href="#price_1.0-ch13_s02_s02_s01_s01_t01">Table 13.4 "Typical One-Way ANOVA Output From Excel"</a> shows the output of the one-way ANOVA function in Excel for these data. This is referred to as an ANOVA table. It shows that <em class="emphasis">MS</em><sub class="subscript"><em class="emphasis">B</em></sub> is 5,971.88, <em class="emphasis">MS</em><sub class="subscript"><em class="emphasis">W</em></sub> is 602.23, and their ratio, <em class="emphasis">F</em>, is 9.92. The <em class="emphasis">p</em> value is .0009. Because this is below .05, the researcher would reject the null hypothesis and conclude that the mean calorie estimates for the three groups are not the same in the population. Notice that the ANOVA table also includes the “sum of squares” (<em class="emphasis">SS</em>) for between groups and for within groups. These values are computed on the way to finding <em class="emphasis">MS</em><sub class="subscript"><em class="emphasis">B</em></sub> and <em class="emphasis">MS</em><sub class="subscript"><em class="emphasis">W</em></sub> but are not typically reported by the researcher. Finally, if the researcher were to compute the <em class="emphasis">F</em> ratio by hand, he could look at <a class="xref" href="#price_1.0-ch13_s02_s02_s01_t01">Table 13.3 "Table of Critical Values of "</a> and see that the critical value of <em class="emphasis">F</em> with 2 and 21 degrees of freedom is 3.467 (the same value in <a class="xref" href="#price_1.0-ch13_s02_s02_s01_s01_t01">Table 13.4 "Typical One-Way ANOVA Output From Excel"</a> under <em class="emphasis">F</em><sub class="subscript">crit</sub>). The fact that his <em class="emphasis">t</em> score was more extreme than this critical value would tell him that his <em class="emphasis">p</em> value is less than .05 and that he should reject the null hypothesis.</p>
+                <div class="table block" id="price_1.0-ch13_s02_s02_s01_s01_t01" frame="all">
+                    <p class="title"><span class="title-prefix">Table 13.4</span> Typical One-Way ANOVA Output From Excel</p>
+                    <table cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th colspan="7">ANOVA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><em class="emphasis">Source of variation</em></td>
+                                <td><em class="emphasis">SS</em></td>
+                                <td><em class="emphasis">df</em></td>
+                                <td><em class="emphasis">MS</em></td>
+                                <td><em class="emphasis">F</em></td>
+                                <td><em class="emphasis">p-value</em></td>
+                                <td>
+<em class="emphasis">F</em><sub class="subscript">crit</sub>
+</td>
+                            </tr>
+                            <tr>
+                                <td>Between groups</td>
+                                <td align="right">11,943.75</td>
+                                <td align="right">2</td>
+                                <td align="right">5,971.875</td>
+                                <td align="right">9.916234</td>
+                                <td align="right">0.000928</td>
+                                <td align="right">3.4668</td>
+                            </tr>
+                            <tr>
+                                <td>Within groups</td>
+                                <td align="right">12,646.88</td>
+                                <td align="right">21</td>
+                                <td align="right">602.2321</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td align="right">24,590.63</td>
+                                <td align="right">23</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="price_1.0-ch13_s02_s02_s02">
+            <h2 class="title editable block">ANOVA Elaborations</h2>
+            <div class="section" id="price_1.0-ch13_s02_s02_s02_s01">
+                <h2 class="title editable block">Post Hoc Comparisons</h2>
+                <p class="para editable block" id="price_1.0-ch13_s02_s02_s02_s01_p01">When we reject the null hypothesis in a one-way ANOVA, we conclude that the group means are not all the same in the population. But this can indicate different things. With three groups, it can indicate that all three means are significantly different from each other. Or it can indicate that one of the means is significantly different from the other two, but the other two are not significantly different from each other. It could be, for example, that the mean calorie estimates of psychology majors, nutrition majors, and dieticians are all significantly different from each other. Or it could be that the mean for dieticians is significantly different from the means for psychology and nutrition majors, but the means for psychology and nutrition majors are not significantly different from each other. For this reason, statistically significant one-way ANOVA results are typically followed up with a series of <span class="margin_term"><a class="glossterm">post hoc comparisons</a><span class="glossdef">Statistical comparison of selected pairs of group or condition means following a statistically significant ANOVA result. Usually done using one of several modified <em class="emphasis">t-</em>test procedures.</span></span> of selected pairs of group means to determine which are different from which others.</p>
+                <p class="para editable block" id="price_1.0-ch13_s02_s02_s02_s01_p02">One approach to post hoc comparisons would be to conduct a series of independent-samples <em class="emphasis">t</em> tests comparing each group mean to each of the other group means. But there is a problem with this approach. In general, if we conduct a <em class="emphasis">t</em> test when the null hypothesis is true, we have a 5% chance of mistakenly rejecting the null hypothesis (see <a class="xref" href="price_1.0-ch13_s03#price_1.0-ch13_s03">Section 13.3 "Additional Considerations"</a> for more on such Type I errors). If we conduct several <em class="emphasis">t</em> tests when the null hypothesis is true, the chance of mistakenly rejecting <em class="emphasis">at least one</em> null hypothesis increases with each test we conduct. Thus researchers do not usually make post hoc comparisons using standard <em class="emphasis">t</em> tests because there is too great a chance that they will mistakenly reject at least one null hypothesis. Instead, they use one of several modified <em class="emphasis">t</em> test procedures—among them the Bonferonni procedure, Fisher’s least significant difference (LSD) test, and Tukey’s honestly significant difference (HSD) test. The details of these approaches are beyond the scope of this book, but it is important to understand their purpose. It is to keep the risk of mistakenly rejecting a true null hypothesis to an acceptable level (close to 5%).</p>
+            </div>
+            <div class="section" id="price_1.0-ch13_s02_s02_s02_s02">
+                <h2 class="title editable block">Repeated-Measures ANOVA</h2>
+                <p class="para editable block" id="price_1.0-ch13_s02_s02_s02_s02_p01">Recall that the one-way ANOVA is appropriate for between-subjects designs in which the means being compared come from separate groups of participants. It is not appropriate for within-subjects designs in which the means being compared come from the same participants tested under different conditions or at different times. This requires a slightly different approach, called the <span class="margin_term"><a class="glossterm">repeated-measures ANOVA</a><span class="glossdef">A null hypothesis test used to compare means for one sample at more than two times or under more than two conditions in a within-subjects design.</span></span>. The basics of the repeated-measures ANOVA are the same as for the one-way ANOVA. The main difference is that measuring the dependent variable multiple times for each participant allows for a more refined measure of <em class="emphasis">MS</em><sub class="subscript"><em class="emphasis">W</em></sub>. Imagine, for example, that the dependent variable in a study is a measure of reaction time. Some participants will be faster or slower than others because of stable individual differences in their nervous systems, muscles, and other factors. In a between-subjects design, these stable individual differences would simply add to the variability within the groups and increase the value of <em class="emphasis">MS</em><sub class="subscript"><em class="emphasis">W</em></sub>. In a within-subjects design, however, these stable individual differences can be measured and subtracted from the value of <em class="emphasis">MS</em><sub class="subscript"><em class="emphasis">W</em></sub>. This lower value of <em class="emphasis">MS</em><sub class="subscript"><em class="emphasis">W</em></sub> means a higher value of <em class="emphasis">F</em> and a more sensitive test.</p>
+            </div>
+        </div>
+        <div class="section" id="price_1.0-ch13_s02_s02_s03">
+            <h2 class="title editable block">Factorial ANOVA</h2>
+            <p class="para editable block" id="price_1.0-ch13_s02_s02_s03_p01">When more than one independent variable is included in a factorial design, the appropriate approach is the <span class="margin_term"><a class="glossterm">factorial ANOVA</a><span class="glossdef">A null hypothesis test used to test both main effects and interactions in a factorial design.</span></span>. Again, the basics of the factorial ANOVA are the same as for the one-way and repeated-measures ANOVAs. The main difference is that it produces an <em class="emphasis">F</em> ratio and <em class="emphasis">p</em> value for each main effect and for each interaction. Returning to our calorie estimation example, imagine that the health psychologist tests the effect of participant major (psychology vs. nutrition) and food type (cookie vs. hamburger) in a factorial design. A factorial ANOVA would produce separate <em class="emphasis">F</em> ratios and <em class="emphasis">p</em> values for the main effect of major, the main effect of food type, and the interaction between major and food. Appropriate modifications must be made depending on whether the design is between subjects, within subjects, or mixed.</p>
+        </div>
+    </div>
+    <div class="section" id="price_1.0-ch13_s02_s03">
+        <h2 class="title editable block">Testing Pearson’s <em class="emphasis">r</em>
+</h2>
+        <p class="para editable block" id="price_1.0-ch13_s02_s03_p01">For relationships between quantitative variables, where Pearson’s <em class="emphasis">r</em> is used to describe the strength of those relationships, the appropriate null hypothesis test is a test of Pearson’s <em class="emphasis">r</em>. The basic logic is exactly the same as for other null hypothesis tests. In this case, the null hypothesis is that there is no relationship in the population. We can use the Greek lowercase rho (ρ) to represent the relevant parameter: ρ = 0. The alternative hypothesis is that there is a relationship in the population: ρ ≠ 0. As with the <em class="emphasis">t</em> test, this test can be two-tailed if the researcher has no expectation about the direction of the relationship or one-tailed if the researcher expects the relationship to go in a particular direction.</p>
+        <p class="para editable block" id="price_1.0-ch13_s02_s03_p02">It is possible to use Pearson’s <em class="emphasis">r</em> for the sample to compute a <em class="emphasis">t</em> score with <em class="emphasis">N</em> − 2 degrees of freedom and then to proceed as for a <em class="emphasis">t</em> test. However, because of the way it is computed, Pearson’s <em class="emphasis">r</em> can also be treated as its own test statistic. The online statistical tools and statistical software such as Excel and SPSS generally compute Pearson’s <em class="emphasis">r</em> and provide the <em class="emphasis">p</em> value associated with that value of Pearson’s <em class="emphasis">r</em>. As always, if the <em class="emphasis">p</em> value is less than .05, we reject the null hypothesis and conclude that there is a relationship between the variables in the population. If the <em class="emphasis">p</em> value is greater than .05, we retain the null hypothesis and conclude that there is not enough evidence to say there is a relationship in the population. If we compute Pearson’s <em class="emphasis">r</em> by hand, we can use a table like <a class="xref" href="#price_1.0-ch13_s02_s03_t01">Table 13.5 "Table of Critical Values of Pearson’s "</a>, which shows the critical values of <em class="emphasis">r</em> for various samples sizes when α is .05. A sample value of Pearson’s <em class="emphasis">r</em> that is more extreme than the critical value is statistically significant.</p>
+        <div class="table block" id="price_1.0-ch13_s02_s03_t01" frame="all">
+            <p class="title"><span class="title-prefix">Table 13.5</span> Table of Critical Values of Pearson’s <em class="emphasis">r</em> When α = .05</p>
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th align="right"></th>
+                        <th colspan="2" align="right">Critical value of <em class="emphasis">r</em>
+</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="right"><em class="emphasis">N</em></td>
+                        <td align="right">One-tailed</td>
+                        <td align="right">Two-tailed</td>
+                    </tr>
+                    <tr>
+                        <td align="right">5</td>
+                        <td align="right">.805</td>
+                        <td align="right">.878</td>
+                    </tr>
+                    <tr>
+                        <td align="right">10</td>
+                        <td align="right">.549</td>
+                        <td align="right">.632</td>
+                    </tr>
+                    <tr>
+                        <td align="right">15</td>
+                        <td align="right">.441</td>
+                        <td align="right">.514</td>
+                    </tr>
+                    <tr>
+                        <td align="right">20</td>
+                        <td align="right">.378</td>
+                        <td align="right">.444</td>
+                    </tr>
+                    <tr>
+                        <td align="right">25</td>
+                        <td align="right">.337</td>
+                        <td align="right">.396</td>
+                    </tr>
+                    <tr>
+                        <td align="right">30</td>
+                        <td align="right">.306</td>
+                        <td align="right">.361</td>
+                    </tr>
+                    <tr>
+                        <td align="right">35</td>
+                        <td align="right">.283</td>
+                        <td align="right">.334</td>
+                    </tr>
+                    <tr>
+                        <td align="right">40</td>
+                        <td align="right">.264</td>
+                        <td align="right">.312</td>
+                    </tr>
+                    <tr>
+                        <td align="right">45</td>
+                        <td align="right">.248</td>
+                        <td align="right">.294</td>
+                    </tr>
+                    <tr>
+                        <td align="right">50</td>
+                        <td align="right">.235</td>
+                        <td align="right">.279</td>
+                    </tr>
+                    <tr>
+                        <td align="right">55</td>
+                        <td align="right">.224</td>
+                        <td align="right">.266</td>
+                    </tr>
+                    <tr>
+                        <td align="right">60</td>
+                        <td align="right">.214</td>
+                        <td align="right">.254</td>
+                    </tr>
+                    <tr>
+                        <td align="right">65</td>
+                        <td align="right">.206</td>
+                        <td align="right">.244</td>
+                    </tr>
+                    <tr>
+                        <td align="right">70</td>
+                        <td align="right">.198</td>
+                        <td align="right">.235</td>
+                    </tr>
+                    <tr>
+                        <td align="right">75</td>
+                        <td align="right">.191</td>
+                        <td align="right">.227</td>
+                    </tr>
+                    <tr>
+                        <td align="right">80</td>
+                        <td align="right">.185</td>
+                        <td align="right">.220</td>
+                    </tr>
+                    <tr>
+                        <td align="right">85</td>
+                        <td align="right">.180</td>
+                        <td align="right">.213</td>
+                    </tr>
+                    <tr>
+                        <td align="right">90</td>
+                        <td align="right">.174</td>
+                        <td align="right">.207</td>
+                    </tr>
+                    <tr>
+                        <td align="right">95</td>
+                        <td align="right">.170</td>
+                        <td align="right">.202</td>
+                    </tr>
+                    <tr>
+                        <td align="right">100</td>
+                        <td align="right">.165</td>
+                        <td align="right">.197</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section" id="price_1.0-ch13_s02_s03_s01">
+            <h2 class="title editable block">Example Test of Pearson’s <em class="emphasis">r</em>
+</h2>
+            <p class="para editable block" id="price_1.0-ch13_s02_s03_s01_p01">Imagine that the health psychologist is interested in the correlation between people’s calorie estimates and their weight. He has no expectation about the direction of the relationship, so he decides to conduct a two-tailed test. He computes the correlation for a sample of 22 college students and finds that Pearson’s <em class="emphasis">r</em> is −.21. The statistical software he uses tells him that the <em class="emphasis">p</em> value is .348. It is greater than .05, so he retains the null hypothesis and concludes that there is no relationship between people’s calorie estimates and their weight. If he were to compute Pearson’s <em class="emphasis">r</em> by hand, he could look at <a class="xref" href="#price_1.0-ch13_s02_s03_t01">Table 13.5 "Table of Critical Values of Pearson’s "</a> and see that the critical value for 22 − 2 = 20 degrees of freedom is .444. The fact that Pearson’s <em class="emphasis">r</em> for the sample is less extreme than this critical value tells him that the <em class="emphasis">p</em> value is greater than .05 and that he should retain the null hypothesis.</p>
+            <div class="key_takeaways editable block" id="price_1.0-ch13_s02_s03_s01_n01">
+                <h3 class="title">Key Takeaways</h3>
+                <ul class="itemizedlist" id="price_1.0-ch13_s02_s03_s01_l01">
+                    <li>To compare two means, the most common null hypothesis test is the <em class="emphasis">t</em> test. The one-sample <em class="emphasis">t</em> test is used for comparing one sample mean with a hypothetical population mean of interest, the dependent-samples <em class="emphasis">t</em> test is used to compare two means in a within-subjects design, and the independent-samples <em class="emphasis">t</em> test is used to compare two means in a between-subjects design.</li>
+                    <li>To compare more than two means, the most common null hypothesis test is the analysis of variance (ANOVA). The one-way ANOVA is used for between-subjects designs with one independent variable, the repeated-measures ANOVA is used for within-subjects designs, and the factorial ANOVA is used for factorial designs.</li>
+                    <li>A null hypothesis test of Pearson’s <em class="emphasis">r</em> is used to compare a sample value of Pearson’s <em class="emphasis">r</em> with a hypothetical population value of 0.</li>
+                </ul>
+            </div>
+            <div class="exercises editable block" id="price_1.0-ch13_s02_s03_s01_n02">
+                <h3 class="title">Exercises</h3>
+                <ol class="orderedlist" id="price_1.0-ch13_s02_s03_s01_l02">
+                    <li>Practice: Use one of the online tools, Excel, or SPSS to reproduce the one-sample <em class="emphasis">t</em> test, dependent-samples <em class="emphasis">t</em> test, independent-samples <em class="emphasis">t</em> test, and one-way ANOVA for the four sets of calorie estimation data presented in this section.</li>
+                    <li>Practice: A sample of 25 college students rated their friendliness on a scale of 1 (<em class="emphasis">Much Lower Than Average</em>) to 7 (<em class="emphasis">Much Higher Than Average</em>). Their mean rating was 5.30 with a standard deviation of 1.50. Conduct a one-sample <em class="emphasis">t</em> test comparing their mean rating with a hypothetical mean rating of 4 (<em class="emphasis">Average</em>). The question is whether college students have a tendency to rate themselves as friendlier than average.</li>
+                    <li>Practice: Decide whether each of the following Pearson’s <em class="emphasis">r</em> values is statistically significant for both a one-tailed and a two-tailed test. (a) The correlation between height and IQ is +.13 in a sample of 35. (b) For a sample of 88 college students, the correlation between how disgusted they felt and the harshness of their moral judgments was +.23. (c) The correlation between the number of daily hassles and positive mood is −.43 for a sample of 30 middle-aged adults.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section" id="price_1.0-ch13_s03" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">13.3</span> Additional Considerations</h2>
+    <div class="learning_objectives editable block" id="price_1.0-ch13_s03_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="price_1.0-ch13_s03_l01">
+            <li>Define Type I and Type II errors, explain why they occur, and identify some steps that can be taken to minimize their likelihood.</li>
+            <li>Define statistical power, explain its role in the planning of new studies, and use online tools to compute the statistical power of simple research designs.</li>
+            <li>List some criticisms of conventional null hypothesis testing, along with some ways of dealing with these criticisms.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="price_1.0-ch13_s03_p01">In this section, we consider a few other issues related to null hypothesis testing, including some that are useful in planning studies and interpreting results. We even consider some long-standing criticisms of null hypothesis testing, along with some steps that researchers in psychology have taken to address them.</p>
+    <div class="section" id="price_1.0-ch13_s03_s01">
+        <h2 class="title editable block">Errors in Null Hypothesis Testing</h2>
+        <p class="para editable block" id="price_1.0-ch13_s03_s01_p01">In null hypothesis testing, the researcher tries to draw a reasonable conclusion about the population based on the sample. Unfortunately, this conclusion is not guaranteed to be correct. This is illustrated by <a class="xref" href="#price_1.0-ch13_s03_s01_f01">Figure 13.3 "Two Types of Correct Decisions and Two Types of Errors in Null Hypothesis Testing"</a>. The rows of this table represent the two possible decisions that we can make in null hypothesis testing: to reject or retain the null hypothesis. The columns represent the two possible states of the world: The null hypothesis is false or it is true. The four cells of the table, then, represent the four distinct outcomes of a null hypothesis test. Two of the outcomes—rejecting the null hypothesis when it is false and retaining it when it is true—are correct decisions. The other two—rejecting the null hypothesis when it is true and retaining it when it is false—are errors.</p>
+        <div class="figure large editable block" id="price_1.0-ch13_s03_s01_f01">
+            <p class="title"><span class="title-prefix">Figure 13.3</span> Two Types of Correct Decisions and Two Types of Errors in Null Hypothesis Testing</p>
+            <img src="section_17/7fa8ae13dd537403f0205d33722c62fc.jpg">
+        </div>
+        <p class="para editable block" id="price_1.0-ch13_s03_s01_p02">Rejecting the null hypothesis when it is true is called a <span class="margin_term"><a class="glossterm">Type I error</a><span class="glossdef">In null hypothesis testing, rejecting the null hypothesis when it is true.</span></span>. This means that we have concluded that there is a relationship in the population when in fact there is not. Type I errors occur because even when there is no relationship in the population, sampling error alone will occasionally produce an extreme result. In fact, when the null hypothesis is true and α is .05, we will mistakenly reject the null hypothesis 5% of the time. (This is why α is sometimes referred to as the “Type I error rate.”) Retaining the null hypothesis when it is false is called a <span class="margin_term"><a class="glossterm">Type II error</a><span class="glossdef">In null hypothesis testing, failing to reject the null hypothesis when it is false.</span></span>. This means that we have concluded that there is no relationship in the population when in fact there is. In practice, Type II errors occur primarily because the research design lacks adequate statistical power to detect the relationship (e.g., the sample is too small). We will have more to say about statistical power shortly.</p>
+        <p class="para editable block" id="price_1.0-ch13_s03_s01_p03">In principle, it is possible to reduce the chance of a Type I error by setting α to something less than .05. Setting it to .01, for example, would mean that if the null hypothesis is true, then there is only a 1% chance of mistakenly rejecting it. But making it harder to reject true null hypotheses also makes it harder to reject false ones and therefore increases the chance of a Type II error. Similarly, it is possible to reduce the chance of a Type II error by setting α to something greater than .05 (e.g., .10). But making it easier to reject false null hypotheses also makes it easier to reject true ones and therefore increases the chance of a Type I error. This provides some insight into why the convention is to set α to .05. There is some agreement among researchers that level of α keeps the rates of both Type I and Type II errors at acceptable levels.</p>
+        <p class="para editable block" id="price_1.0-ch13_s03_s01_p04">The possibility of committing Type I and Type II errors has several important implications for interpreting the results of our own and others’ research. One is that we should be cautious about interpreting the results of any individual study because there is a chance that it reflects a Type I or Type II error. This is why researchers consider it important to replicate their studies. Each time researchers replicate a study and find a similar result, they rightly become more confident that the result represents a real phenomenon and not just a Type I or Type II error.</p>
+        <p class="para editable block" id="price_1.0-ch13_s03_s01_p05">Another issue related to Type I errors is the so-called <span class="margin_term"><a class="glossterm">file drawer problem</a><span class="glossdef">The fact that statistically significant results are more likely to be submitted and accepted for publication than nonsignificant results.</span></span> (Rosenthal, 1979).<span class="footnote" id="price_1.0-fn13_005">Rosenthal, R. (1979). The file drawer problem and tolerance for null results. <em class="emphasis">Psychological Bulletin</em>, <em class="emphasis">83</em>, 638–641.</span> The idea is that when researchers obtain statistically significant results, they tend to submit them for publication, and journal editors and reviewers tend to accept them. But when researchers obtain nonsignificant results, they tend not to submit them for publication, or if they do submit them, journal editors and reviewers tend not to accept them. Researchers end up putting these nonsignificant results away in a file drawer (or nowadays, in a folder on their hard drive). One effect of this is that the published literature probably contains a higher proportion of Type I errors than we might expect on the basis of statistical considerations alone. Even when there is a relationship between two variables in the population, the published research literature is likely to overstate the strength of that relationship. Imagine, for example, that the relationship between two variables in the population is positive but weak (e.g., ρ = +.10). If several researchers conduct studies on this relationship, sampling error is likely to produce results ranging from weak negative relationships (e.g., <em class="emphasis">r</em> = −.10) to moderately strong positive ones (e.g., <em class="emphasis">r</em> = +.40). But because of the file drawer problem, it is likely that only those studies producing moderate to strong positive relationships are published. The result is that the effect reported in the published literature tends to be stronger than it really is in the population.</p>
+        <p class="para editable block" id="price_1.0-ch13_s03_s01_p06">The file drawer problem is a difficult one because it is a product of the way scientific research has traditionally been conducted and published. One solution might be for journal editors and reviewers to evaluate research submitted for publication without knowing the results of that research. The idea is that if the research question is judged to be interesting and the method judged to be sound, then a nonsignificant result should be just as important and worthy of publication as a significant one. Short of such a radical change in how research is evaluated for publication, researchers can still take pains to keep their nonsignificant results and share them as widely as possible (e.g., at professional conferences). Many scientific disciplines now have journals devoted to publishing nonsignificant results. In psychology, for example, there is the <em class="emphasis">Journal of Articles in Support of the Null Hypothesis</em> (<a class="link" target="_blank" href="http://www.jasnh.com">http://www.jasnh.com</a>).</p>
+    </div>
+    <div class="section" id="price_1.0-ch13_s03_s02">
+        <h2 class="title editable block">Statistical Power</h2>
+        <p class="para editable block" id="price_1.0-ch13_s03_s02_p01">The <span class="margin_term"><a class="glossterm">statistical power</a><span class="glossdef">The probability of rejecting the null hypothesis for a given sample size and expected relationship strength.</span></span> of a research design is the probability of rejecting the null hypothesis given the sample size and expected relationship strength. For example, the statistical power of a study with 50 participants and an expected Pearson’s <em class="emphasis">r</em> of +.30 in the population is .59. That is, there is a 59% chance of rejecting the null hypothesis if indeed the population correlation is +.30. Statistical power is the complement of the probability of committing a Type II error. So in this example, the probability of committing a Type II error would be 1 − .59 = .41. Clearly, researchers should be interested in the power of their research designs if they want to avoid making Type II errors. In particular, they should make sure their research design has adequate power before collecting data. A common guideline is that a power of .80 is adequate. This means that there is an 80% chance of rejecting the null hypothesis for the expected relationship strength.</p>
+        <p class="para editable block" id="price_1.0-ch13_s03_s02_p02">The topic of how to compute power for various research designs and null hypothesis tests is beyond the scope of this book. However, there are online tools that allow you to do this by entering your sample size, expected relationship strength, and α level for various hypothesis tests (see “Computing Power Online”). In addition, <a class="xref" href="#price_1.0-ch13_s03_s02_t01">Table 13.6 "Sample Sizes Needed to Achieve Statistical Power of .80 for Different Expected Relationship Strengths for an Independent-Samples "</a> shows the sample size needed to achieve a power of .80 for weak, medium, and strong relationships for a two-tailed independent-samples <em class="emphasis">t</em> test and for a two-tailed test of Pearson’s <em class="emphasis">r</em>. Notice that this table amplifies the point made earlier about relationship strength, sample size, and statistical significance. In particular, weak relationships require very large samples to provide adequate statistical power.</p>
+        <div class="table block" id="price_1.0-ch13_s03_s02_t01" frame="all">
+            <p class="title"><span class="title-prefix">Table 13.6</span> Sample Sizes Needed to Achieve Statistical Power of .80 for Different Expected Relationship Strengths for an Independent-Samples <em class="emphasis">t</em> Test and a Test of Pearson’s <em class="emphasis">r</em></p>
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th colspan="3">Null Hypothesis Test</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Relationship Strength</td>
+                        <td>Independent-Samples <em class="emphasis">t</em> Test</td>
+                        <td>Test of Pearson’s <em class="emphasis">r</em>
+</td>
+                    </tr>
+                    <tr>
+                        <td>Strong (<em class="emphasis">d</em> = .80, <em class="emphasis">r</em> = .50)</td>
+                        <td align="right">52</td>
+                        <td align="right">28</td>
+                    </tr>
+                    <tr>
+                        <td>Medium (<em class="emphasis">d</em> = .50, <em class="emphasis">r</em> = .30)</td>
+                        <td align="right">128</td>
+                        <td align="right">84</td>
+                    </tr>
+                    <tr>
+                        <td>Weak (<em class="emphasis">d</em> = .20, <em class="emphasis">r</em> = .10)</td>
+                        <td align="right">788</td>
+                        <td align="right">782</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="para editable block" id="price_1.0-ch13_s03_s02_p03">What should you do if you discover that your research design does not have adequate power? Imagine, for example, that you are conducting a between-subjects experiment with 20 participants in each of two conditions and that you expect a medium difference (<em class="emphasis">d</em> = .50) in the population. The statistical power of this design is only .34. That is, even if there is a medium difference in the population, there is only about a one in three chance of rejecting the null hypothesis and about a two in three chance of committing a Type II error. Given the time and effort involved in conducting the study, this probably seems like an unacceptably low chance of rejecting the null hypothesis and an unacceptably high chance of committing a Type II error.</p>
+        <p class="para editable block" id="price_1.0-ch13_s03_s02_p04">Given that statistical power depends primarily on relationship strength and sample size, there are essentially two steps you can take to increase statistical power: increase the strength of the relationship or increase the sample size. Increasing the strength of the relationship can sometimes be accomplished by using a stronger manipulation or by more carefully controlling extraneous variables to reduce the amount of noise in the data (e.g., by using a within-subjects design rather than a between-subjects design). The usual strategy, however, is to increase the sample size. For any expected relationship strength, there will always be some sample large enough to achieve adequate power.</p>
+        <div class="callout editable block" id="price_1.0-ch13_s03_s02_n01">
+            <h3 class="title">Computing Power Online</h3>
+            <p class="para" id="price_1.0-ch13_s03_s02_p05">The following links are to tools that allow you to compute statistical power for various research designs and null hypothesis tests by entering information about the expected relationship strength, the sample size, and the α level. They also allow you to compute the sample size necessary to achieve your desired level of power (e.g., .80). The first is an online tool. The second is a free downloadable program called G*Power.</p>
+            <ul class="itemizedlist" id="price_1.0-ch13_s03_s02_l01">
+                <li>Russ Lenth’s Power and Sample Size Page: <a class="link" target="_blank" href="http://www.stat.uiowa.edu/~rlenth/Power/index.html">http://www.stat.uiowa.edu/~rlenth/Power/index.html</a>
+</li>
+                <li>G*Power: <a class="link" target="_blank" href="http://www.psycho.uni-duesseldorf.de/aap/projects/gpower">http://www.psycho.uni-duesseldorf.de/aap/projects/gpower</a>
+</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section" id="price_1.0-ch13_s03_s03">
+        <h2 class="title editable block">Problems With Null Hypothesis Testing, and Some Solutions</h2>
+        <p class="para editable block" id="price_1.0-ch13_s03_s03_p01">Again, null hypothesis testing is the most common approach to inferential statistics in psychology. It is not without its critics, however. In fact, in recent years the criticisms have become so prominent that the American Psychological Association convened a task force to make recommendations about how to deal with them (Wilkinson &amp; Task Force on Statistical Inference, 1999).<span class="footnote" id="price_1.0-fn13_006">Wilkinson, L., &amp; Task Force on Statistical Inference. (1999). Statistical methods in psychology journals: Guidelines and explanations. <em class="emphasis">American Psychologist</em>, <em class="emphasis">54</em>, 594–604.</span> In this section, we consider some of the criticisms and some of the recommendations.</p>
+        <div class="section" id="price_1.0-ch13_s03_s03_s01">
+            <h2 class="title editable block">Criticisms of Null Hypothesis Testing</h2>
+            <p class="para editable block" id="price_1.0-ch13_s03_s03_s01_p01">Some criticisms of null hypothesis testing focus on researchers’ misunderstanding of it. We have already seen, for example, that the <em class="emphasis">p</em> value is widely misinterpreted as the probability that the null hypothesis is true. (Recall that it is really the probability of the sample result <em class="emphasis">if</em> the null hypothesis were true.) A closely related misinterpretation is that 1 − <em class="emphasis">p</em> is the probability of replicating a statistically significant result. In one study, 60% of a sample of professional researchers thought that a <em class="emphasis">p</em> value of .01—for an independent-samples <em class="emphasis">t</em> test with 20 participants in each sample—meant there was a 99% chance of replicating the statistically significant result (Oakes, 1986).<span class="footnote" id="price_1.0-fn13_007">Oakes, M. (1986). <em class="emphasis">Statistical inference: A commentary for the social and behavioral sciences</em>. Chichester, UK: Wiley.</span> Our earlier discussion of power should make it clear that this is far too optimistic. As <a class="xref" href="price_1.0-ch13_s02#price_1.0-ch13_s02_s03_t01">Table 13.5 "Table of Critical Values of Pearson’s "</a> shows, even if there were a large difference between means in the population, it would require 26 participants per sample to achieve a power of .80. And the program G*Power shows that it would require 59 participants per sample to achieve a power of .99.</p>
+            <p class="para editable block" id="price_1.0-ch13_s03_s03_s01_p02">Another set of criticisms focuses on the logic of null hypothesis testing. To many, the strict convention of rejecting the null hypothesis when <em class="emphasis">p</em> is less than .05 and retaining it when <em class="emphasis">p</em> is greater than .05 makes little sense. This criticism does not have to do with the specific value of .05 but with the idea that there should be any rigid dividing line between results that are considered significant and results that are not. Imagine two studies on the same statistical relationship with similar sample sizes. One has a <em class="emphasis">p</em> value of .04 and the other a <em class="emphasis">p</em> value of .06. Although the two studies have produced essentially the same result, the former is likely to be considered interesting and worthy of publication and the latter simply not significant. This convention is likely to prevent good research from being published and to contribute to the file drawer problem.</p>
+            <p class="para editable block" id="price_1.0-ch13_s03_s03_s01_p03">Yet another set of criticisms focus on the idea that null hypothesis testing—even when understood and carried out correctly—is simply not very informative. Recall that the null hypothesis is that there is no relationship between variables in the population (e.g., Cohen’s <em class="emphasis">d</em> or Pearson’s <em class="emphasis">r</em> is precisely 0). So to reject the null hypothesis is simply to say that there is <em class="emphasis">some</em> nonzero relationship in the population. But this is not really saying very much. Imagine if chemistry could tell us only that there is <em class="emphasis">some</em> relationship between the temperature of a gas and its volume—as opposed to providing a precise equation to describe that relationship. Some critics even argue that the relationship between two variables in the population is never precisely 0 if it is carried out to enough decimal places. In other words, the null hypothesis is never literally true. So rejecting it does not tell us anything we did not already know!</p>
+            <p class="para editable block" id="price_1.0-ch13_s03_s03_s01_p04">To be fair, many researchers have come to the defense of null hypothesis testing. One of them, Robert Abelson, has argued that when it is correctly understood and carried out, null hypothesis testing does serve an important purpose (Abelson, 1995).<span class="footnote" id="price_1.0-fn13_008">Abelson, R. P. (1995). <em class="emphasis">Statistics as principled argument</em>. Mahwah, NJ: Erlbaum.</span> Especially when dealing with new phenomena, it gives researchers a principled way to convince others that their results should not be dismissed as mere chance occurrences.</p>
+        </div>
+        <div class="section" id="price_1.0-ch13_s03_s03_s02">
+            <h2 class="title editable block">What to Do?</h2>
+            <p class="para editable block" id="price_1.0-ch13_s03_s03_s02_p01">Even those who defend null hypothesis testing recognize many of the problems with it. But what should be done? Some suggestions now appear in the <em class="emphasis">Publication Manual</em>. One is that each null hypothesis test should be accompanied by an effect size measure such as Cohen’s <em class="emphasis">d</em> or Pearson’s <em class="emphasis">r</em>. By doing so, the researcher provides an estimate of how strong the relationship in the population is—not just whether there is one or not. (Remember that the <em class="emphasis">p</em> value cannot substitute as a measure of relationship strength because it also depends on the sample size. Even a very weak result can be statistically significant if the sample is large enough.)</p>
+            <p class="para editable block" id="price_1.0-ch13_s03_s03_s02_p02">Another suggestion is to use confidence intervals rather than null hypothesis tests. A <span class="margin_term"><a class="glossterm">confidence interval</a><span class="glossdef">A range of values computed in such a way that some specified percentage of the time (usually 95%) the population parameter of interest will lie within that range.</span></span> around a statistic is a range of values that is computed in such a way that some percentage of the time (usually 95%) the population parameter will lie within that range. For example, a sample of 20 college students might have a mean calorie estimate for a chocolate chip cookie of 200 with a 95% confidence interval of 160 to 240. In other words, there is a very good chance that the mean calorie estimate for the population of college students lies between 160 and 240. Advocates of confidence intervals argue that they are much easier to interpret than null hypothesis tests. Another advantage of confidence intervals is that they provide the information necessary to do null hypothesis tests should anyone want to. In this example, the sample mean of 200 is significantly different at the .05 level from any hypothetical population mean that lies outside the confidence interval. So the confidence interval of 160 to 240 tells us that the sample mean is statistically significantly different from a hypothetical population mean of 250.</p>
+            <p class="para editable block" id="price_1.0-ch13_s03_s03_s02_p03">Finally, there are more radical solutions to the problems of null hypothesis testing that involve using very different approaches to inferential statistics. <span class="margin_term"><a class="glossterm">Bayesian statistics</a><span class="glossdef">An alternative approach to inferential statistics in which the researcher specifies the probability that the null hypothesis and important alternative hypotheses are true before conducting a study, conducts the study, and then computes revised probabilities based on the data.</span></span>, for example, is an approach in which the researcher specifies the probability that the null hypothesis and any important alternative hypotheses are true before conducting the study, conducts the study, and then updates the probabilities based on the data. It is too early to say whether this approach will become common in psychological research. For now, null hypothesis testing—supported by effect size measures and confidence intervals—remains the dominant approach.</p>
+            <div class="key_takeaways editable block" id="price_1.0-ch13_s03_s03_s02_n01">
+                <h3 class="title">Key Takeaways</h3>
+                <ul class="itemizedlist" id="price_1.0-ch13_s03_s03_s02_l01">
+                    <li>The decision to reject or retain the null hypothesis is not guaranteed to be correct. A Type I error occurs when one rejects the null hypothesis when it is true. A Type II error occurs when one fails to reject the null hypothesis when it is false.</li>
+                    <li>The statistical power of a research design is the probability of rejecting the null hypothesis given the expected relationship strength in the population and the sample size. Researchers should make sure that their studies have adequate statistical power before conducting them.</li>
+                    <li>Null hypothesis testing has been criticized on the grounds that researchers misunderstand it, that it is illogical, and that it is uninformative. Others argue that it serves an important purpose—especially when used with effect size measures, confidence intervals, and other techniques. It remains the dominant approach to inferential statistics in psychology.</li>
+                </ul>
+            </div>
+            <div class="exercises editable block" id="price_1.0-ch13_s03_s03_s02_n02">
+                <h3 class="title">Exercises</h3>
+                <ol class="orderedlist" id="price_1.0-ch13_s03_s03_s02_l02">
+                    <li>
+                        <p class="para">Discussion: A researcher compares the effectiveness of two forms of psychotherapy for social phobia using an independent-samples <em class="emphasis">t</em> test.</p>
+                        <ol class="orderedlist" id="price_1.0-ch13_s03_s03_s02_l03" numeration="loweralpha">
+                            <li>Explain what it would mean for the researcher to commit a Type I error.</li>
+                            <li>Explain what it would mean for the researcher to commit a Type II error.</li>
+                        </ol>
+                    </li>
+                    <li>Discussion: Imagine that you conduct a <em class="emphasis">t</em> test and the <em class="emphasis">p</em> value is .02. How could you explain what this <em class="emphasis">p</em> value means to someone who is not already familiar with null hypothesis testing? Be sure to avoid the common misinterpretations of the <em class="emphasis">p</em> value.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s16-descriptive-statistics.html"><img src="shared/images/batch-left.png"></a> <a href="s16-descriptive-statistics.html">Previous Chapter</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        &nbsp;
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

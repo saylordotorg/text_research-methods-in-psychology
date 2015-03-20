@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Understanding Null Hypothesis Testing</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s16-04-conducting-your-analyses.html"><img src="shared/images/batch-left.png"></a> <a href="s16-04-conducting-your-analyses.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s17-02-some-basic-null-hypothesis-tes.html">Next Section</a> <a href="s17-02-some-basic-null-hypothesis-tes.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="price_1.0-ch13_s01" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">13.1</span> Understanding Null Hypothesis Testing</h2>
+    <div class="learning_objectives editable block" id="price_1.0-ch13_s01_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="price_1.0-ch13_s01_l01">
+            <li>Explain the purpose of null hypothesis testing, including the role of sampling error.</li>
+            <li>Describe the basic logic of null hypothesis testing.</li>
+            <li>Describe the role of relationship strength and sample size in determining statistical significance and make reasonable judgments about statistical significance based on these two factors.</li>
+        </ol>
+    </div>
+    <div class="section" id="price_1.0-ch13_s01_s01">
+        <h2 class="title editable block">The Purpose of Null Hypothesis Testing</h2>
+        <p class="para editable block" id="price_1.0-ch13_s01_s01_p01">As we have seen, psychological research typically involves measuring one or more variables for a sample and computing descriptive statistics for that sample. In general, however, the researcher’s goal is not to draw conclusions about that sample but to draw conclusions about the population that the sample was selected from. Thus researchers must use sample statistics to draw conclusions about the corresponding values in the population. These corresponding values in the population are called <span class="margin_term"><a class="glossterm">parameters</a><span class="glossdef">A numerical summary (e.g., mean, standard deviation) of a population. A numerical summary of a sample is called a “statistic.”</span></span>. Imagine, for example, that a researcher measures the number of depressive symptoms exhibited by each of 50 clinically depressed adults and computes the mean number of symptoms. The researcher probably wants to use this sample statistic (the mean number of symptoms for the sample) to draw conclusions about the corresponding population parameter (the mean number of symptoms for clinically depressed adults).</p>
+        <p class="para editable block" id="price_1.0-ch13_s01_s01_p02">Unfortunately, sample statistics are not perfect estimates of their corresponding population parameters. This is because there is a certain amount of random variability in any statistic from sample to sample. The mean number of depressive symptoms might be 8.73 in one sample of clinically depressed adults, 6.45 in a second sample, and 9.44 in a third—even though these samples are selected randomly from the same population. Similarly, the correlation (Pearson’s <em class="emphasis">r</em>) between two variables might be +.24 in one sample, −.04 in a second sample, and +.15 in a third—again, even though these samples are selected randomly from the same population. This random variability in a statistic from sample to sample is called <span class="margin_term"><a class="glossterm">sampling error</a><span class="glossdef">Random variation in a statistic from sample to sample.</span></span>. (Note that the term <em class="emphasis">error</em> here refers to random variability and does not imply that anyone has made a mistake. No one “commits a sampling error.”)</p>
+        <p class="para editable block" id="price_1.0-ch13_s01_s01_p03">One implication of this is that when there is a statistical relationship in a sample, it is not always clear that there is a statistical relationship in the population. A small difference between two group means in a sample might indicate that there is a small difference between the two group means in the population. But it could also be that there is no difference between the means in the population and that the difference in the sample is just a matter of sampling error. Similarly, a Pearson’s <em class="emphasis">r</em> value of −.29 in a sample might mean that there is a negative relationship in the population. But it could also be that there is no relationship in the population and that the relationship in the sample is just a matter of sampling error.</p>
+        <p class="para editable block" id="price_1.0-ch13_s01_s01_p04">In fact, any statistical relationship in a sample can be interpreted in two ways:</p>
+        <ol class="orderedlist editable block" id="price_1.0-ch13_s01_s01_l01">
+            <li>There is a relationship in the population, and the relationship in the sample reflects this.</li>
+            <li>There is no relationship in the population, and the relationship in the sample reflects only sampling error.</li>
+        </ol>
+        <p class="para editable block" id="price_1.0-ch13_s01_s01_p05">The purpose of null hypothesis testing is simply to help researchers decide between these two interpretations.</p>
+    </div>
+    <div class="section" id="price_1.0-ch13_s01_s02">
+        <h2 class="title editable block">The Logic of Null Hypothesis Testing</h2>
+        <p class="para editable block" id="price_1.0-ch13_s01_s02_p01"><span class="margin_term"><a class="glossterm">Null hypothesis testing</a><span class="glossdef">A formal approach to deciding whether a sample relationship is due to chance (the null hypothesis) or reflects a real relationship in the population (the alternative hypothesis).</span></span> is a formal approach to deciding between two interpretations of a statistical relationship in a sample. One interpretation is called the <span class="margin_term"><a class="glossterm">null hypothesis</a><span class="glossdef">The idea that there is no statistical relationship between two variables in the population and that any relationship in a sample is due to chance. Often abbreviated <em class="emphasis">H</em><sub class="subscript">0</sub>.</span></span> (often symbolized <em class="emphasis">H</em><sub class="subscript">0</sub> and read as “H-naught”). This is the idea that there is no relationship in the population and that the relationship in the sample reflects only sampling error. Informally, the null hypothesis is that the sample relationship “occurred by chance.” The other interpretation is called the <span class="margin_term"><a class="glossterm">alternative hypothesis</a><span class="glossdef">The idea that there is a statistical relationship between two variables in the population and that any relationship in a sample reflects that real relationship. Often abbreviated <em class="emphasis">H</em><sub class="subscript">1</sub>.</span></span> (often symbolized as <em class="emphasis">H</em><sub class="subscript">1</sub>). This is the idea that there is a relationship in the population and that the relationship in the sample reflects this relationship in the population.</p>
+        <p class="para editable block" id="price_1.0-ch13_s01_s02_p02">Again, every statistical relationship in a sample can be interpreted in either of these two ways: It might have occurred by chance, or it might reflect a relationship in the population. So researchers need a way to decide between them. Although there are many specific null hypothesis testing techniques, they are all based on the same general logic. The steps are as follows:</p>
+        <ol class="orderedlist editable block" id="price_1.0-ch13_s01_s02_l01">
+            <li>Assume for the moment that the null hypothesis is true. There is no relationship between the variables in the population.</li>
+            <li>Determine how likely the sample relationship would be if the null hypothesis were true.</li>
+            <li>If the sample relationship would be extremely unlikely, then <span class="margin_term"><a class="glossterm">reject the null hypothesis</a><span class="glossdef">In null hypothesis testing, the conclusion that the null hypothesis is false. The sample relationship reflects a real relationship in the population.</span></span> in favor of the alternative hypothesis. If it would not be extremely unlikely, then <span class="margin_term"><a class="glossterm">retain the null hypothesis</a><span class="glossdef">In null hypothesis testing, the tentative conclusion that the null hypothesis is true. The sample relationship is due to chance. Often expressed as “fail to reject the null hypothesis” (although never as “accept the null hypothesis”).</span></span>.</li>
+        </ol>
+        <p class="para editable block" id="price_1.0-ch13_s01_s02_p03">Following this logic, we can begin to understand why Mehl and his colleagues concluded that there is no difference in talkativeness between women and men in the population. In essence, they asked the following question: “If there were no difference in the population, how likely is it that we would find a small difference of <em class="emphasis">d</em> = 0.06 in our sample?” Their answer to this question was that this sample relationship would be fairly likely if the null hypothesis were true. Therefore, they retained the null hypothesis—concluding that there is no evidence of a sex difference in the population. We can also see why Kanner and his colleagues concluded that there is a correlation between hassles and symptoms in the population. They asked, “If the null hypothesis were true, how likely is it that we would find a strong correlation of +.60 in our sample?” Their answer to this question was that this sample relationship would be fairly unlikely if the null hypothesis were true. Therefore, they rejected the null hypothesis in favor of the alternative hypothesis—concluding that there is a positive correlation between these variables in the population.</p>
+        <p class="para editable block" id="price_1.0-ch13_s01_s02_p04">A crucial step in null hypothesis testing is finding the likelihood of the sample result if the null hypothesis were true. This probability is called the <span class="margin_term"><a class="glossterm"><em class="emphasis">p</em> value</a><span class="glossdef">In null hypothesis testing, the probability of a sample result at least as extreme as the one obtained if the null hypothesis were true.</span></span>. A low <em class="emphasis">p</em> value means that the sample result would be unlikely if the null hypothesis were true and leads to the rejection of the null hypothesis. A high <em class="emphasis">p</em> value means that the sample result would be likely if the null hypothesis were true and leads to the retention of the null hypothesis. But how low must the <em class="emphasis">p</em> value be before the sample result is considered unlikely enough to reject the null hypothesis? In null hypothesis testing, this criterion is called <span class="margin_term"><a class="glossterm">α (alpha)</a><span class="glossdef">In null hypothesis testing, the criterion for deciding that a <em class="emphasis">p</em> value is low enough to reject the null hypothesis. In psychological research, it is almost always set to .05.</span></span> and is almost always set to .05. If there is less than a 5% chance of a result as extreme as the sample result if the null hypothesis were true, then the null hypothesis is rejected. When this happens, the result is said to be <span class="margin_term"><a class="glossterm">statistically significant</a><span class="glossdef">Used to describe a result for which the null hypothesis has been rejected.</span></span>. If there is greater than a 5% chance of a result as extreme as the sample result when the null hypothesis is true, then the null hypothesis is retained. This does not necessarily mean that the researcher accepts the null hypothesis as true—only that there is not currently enough evidence to conclude that it is true. Researchers often use the expression “fail to reject the null hypothesis” rather than “retain the null hypothesis,” but they never use the expression “accept the null hypothesis.”</p>
+        <div class="callout editable block" id="price_1.0-ch13_s01_s02_n01">
+            <h3 class="title">The Misunderstood <em class="emphasis bolditalic">p</em> Value</h3>
+            <p class="para" id="price_1.0-ch13_s01_s02_p05">The <em class="emphasis">p</em> value is one of the most misunderstood quantities in psychological research (Cohen, 1994).<span class="footnote" id="price_1.0-fn13_003">Cohen, J. (1994). The world is round: <em class="emphasis">p</em> &lt; .05. <em class="emphasis">American Psychologist, 49</em>, 997–1003.</span> Even professional researchers misinterpret it, and it is not unusual for such misinterpretations to appear in statistics textbooks!</p>
+            <p class="para" id="price_1.0-ch13_s01_s02_p06">The most common misinterpretation is that the <em class="emphasis">p</em> value is the probability that the null hypothesis is true—that the sample result occurred by chance. For example, a misguided researcher might say that because the <em class="emphasis">p</em> value is .02, there is only a 2% chance that the result is due to chance and a 98% chance that it reflects a real relationship in the population. But this is <em class="emphasis">incorrect</em>. The <em class="emphasis">p</em> value is really the probability of a result at least as extreme as the sample result <em class="emphasis">if</em> the null hypothesis <em class="emphasis">were</em> true. So a <em class="emphasis">p</em> value of .02 means that if the null hypothesis were true, a sample result this extreme would occur only 2% of the time.</p>
+            <p class="para" id="price_1.0-ch13_s01_s02_p07">You can avoid this misunderstanding by remembering that the <em class="emphasis">p</em> value is not the probability that any particular <em class="emphasis">hypothesis</em> is true or false. Instead, it is the probability of obtaining the <em class="emphasis">sample result</em> if the null hypothesis were true.</p>
+        </div>
+    </div>
+    <div class="section" id="price_1.0-ch13_s01_s03">
+        <h2 class="title editable block">Role of Sample Size and Relationship Strength</h2>
+        <p class="para editable block" id="price_1.0-ch13_s01_s03_p01">Recall that null hypothesis testing involves answering the question, “If the null hypothesis were true, what is the probability of a sample result as extreme as this one?” In other words, “What is the <em class="emphasis">p</em> value?” It can be helpful to see that the answer to this question depends on just two considerations: the strength of the relationship and the size of the sample. Specifically, the stronger the sample relationship and the larger the sample, the less likely the result would be if the null hypothesis were true. That is, the lower the <em class="emphasis">p</em> value. This should make sense. Imagine a study in which a sample of 500 women is compared with a sample of 500 men in terms of some psychological characteristic, and Cohen’s <em class="emphasis">d</em> is a strong 0.50. If there were really no sex difference in the population, then a result this strong based on such a large sample should seem highly unlikely. Now imagine a similar study in which a sample of three women is compared with a sample of three men, and Cohen’s <em class="emphasis">d</em> is a weak 0.10. If there were no sex difference in the population, then a relationship this weak based on such a small sample should seem likely. And this is precisely why the null hypothesis would be rejected in the first example and retained in the second.</p>
+        <p class="para editable block" id="price_1.0-ch13_s01_s03_p02">Of course, sometimes the result can be weak and the sample large, or the result can be strong and the sample small. In these cases, the two considerations trade off against each other so that a weak result can be statistically significant if the sample is large enough and a strong relationship can be statistically significant even if the sample is small. <a class="xref" href="#price_1.0-ch13_s01_s03_t01">Table 13.1 "How Relationship Strength and Sample Size Combine to Determine Whether a Result Is Statistically Significant"</a> shows roughly how relationship strength and sample size combine to determine whether a sample result is statistically significant. The columns of the table represent the three levels of relationship strength: weak, medium, and strong. The rows represent four sample sizes that can be considered small, medium, large, and extra large in the context of psychological research. Thus each cell in the table represents a combination of relationship strength and sample size. If a cell contains the word <em class="emphasis">Yes</em>, then this combination would be statistically significant for both Cohen’s <em class="emphasis">d</em> and Pearson’s <em class="emphasis">r</em>. If it contains the word <em class="emphasis">No</em>, then it would not be statistically significant for either. There is one cell where the decision for <em class="emphasis">d</em> and <em class="emphasis">r</em> would be different and another where it might be different depending on some additional considerations, which are discussed in <a class="xref" href="price_1.0-ch13_s02#price_1.0-ch13_s02">Section 13.2 "Some Basic Null Hypothesis Tests"</a></p>
+        <div class="table block" id="price_1.0-ch13_s01_s03_t01" frame="all">
+            <p class="title"><span class="title-prefix">Table 13.1</span> How Relationship Strength and Sample Size Combine to Determine Whether a Result Is Statistically Significant</p>
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th colspan="3">Relationship strength</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sample Size</td>
+                        <td>Weak</td>
+                        <td>Medium</td>
+                        <td>Strong</td>
+                    </tr>
+                    <tr>
+                        <td>Small (<em class="emphasis">N</em> = 20)</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>
+<p class="para"><em class="emphasis">d</em> = Maybe</p>
+<p class="para"><em class="emphasis">r</em> = Yes</p>
+</td>
+                    </tr>
+                    <tr>
+                        <td>Medium (<em class="emphasis">N</em> = 50)</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Large (<em class="emphasis">N</em> = 100)</td>
+                        <td>
+<p class="para"><em class="emphasis">d</em> = Yes</p>
+<p class="para"><em class="emphasis">r</em> = No</p>
+</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Extra large (<em class="emphasis">N</em> = 500)</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="para editable block" id="price_1.0-ch13_s01_s03_p03">Although <a class="xref" href="#price_1.0-ch13_s01_s03_t01">Table 13.1 "How Relationship Strength and Sample Size Combine to Determine Whether a Result Is Statistically Significant"</a> provides only a rough guideline, it shows very clearly that weak relationships based on medium or small samples are never statistically significant and that strong relationships based on medium or larger samples are always statistically significant. If you keep this in mind, you will often know whether a result is statistically significant based on the descriptive statistics alone. It is extremely useful to be able to develop this kind of intuitive judgment. One reason is that it allows you to develop expectations about how your formal null hypothesis tests are going to come out, which in turn allows you to detect problems in your analyses. For example, if your sample relationship is strong and your sample is medium, then you would expect to reject the null hypothesis. If for some reason your formal null hypothesis test indicates otherwise, then you need to double-check your computations and interpretations. A second reason is that the ability to make this kind of intuitive judgment is an indication that you understand the basic logic of this approach in addition to being able to do the computations.</p>
+    </div>
+    <div class="section" id="price_1.0-ch13_s01_s04">
+        <h2 class="title editable block">Statistical Significance Versus Practical Significance</h2>
+        <p class="para editable block" id="price_1.0-ch13_s01_s04_p01"><a class="xref" href="#price_1.0-ch13_s01_s03_t01">Table 13.1 "How Relationship Strength and Sample Size Combine to Determine Whether a Result Is Statistically Significant"</a> illustrates another extremely important point. A statistically significant result is not necessarily a strong one. Even a very weak result can be statistically significant if it is based on a large enough sample. This is closely related to Janet Shibley Hyde’s argument about sex differences (Hyde, 2007).<span class="footnote" id="price_1.0-fn13_004">Hyde, J. S. (2007). New directions in the study of gender similarities and differences. <em class="emphasis">Current Directions in Psychological Science</em>, <em class="emphasis">16</em>, 259–263.</span> The differences between women and men in mathematical problem solving and leadership ability are statistically significant. But the word <em class="emphasis">significant</em> can cause people to interpret these differences as strong and important—perhaps even important enough to influence the college courses they take or even who they vote for. As we have seen, however, these statistically significant differences are actually quite weak—perhaps even “trivial.”</p>
+        <p class="para editable block" id="price_1.0-ch13_s01_s04_p02">This is why it is important to distinguish between the <em class="emphasis">statistical</em> significance of a result and the <em class="emphasis">practical</em> significance of that result. <span class="margin_term"><a class="glossterm">Practical significance</a><span class="glossdef">The importance of a research result in some real-world context. Research results can be statistically significant without having any practical significance. In clinical practice, practical significance is called “clinical significance.”</span></span> refers to the importance or usefulness of the result in some real-world context. Many sex differences are statistically significant—and may even be interesting for purely scientific reasons—but they are not practically significant. In clinical practice, this same concept is often referred to as “clinical significance.” For example, a study on a new treatment for social phobia might show that it produces a statistically significant positive effect. Yet this effect still might not be strong enough to justify the time, effort, and other costs of putting it into practice—especially if easier and cheaper treatments that work almost as well already exist. Although statistically significant, this result would be said to lack practical or clinical significance.</p>
+        <div class="key_takeaways editable block" id="price_1.0-ch13_s01_s04_n01">
+            <h3 class="title">Key Takeaways</h3>
+            <ul class="itemizedlist" id="price_1.0-ch13_s01_s04_l01">
+                <li>Null hypothesis testing is a formal approach to deciding whether a statistical relationship in a sample reflects a real relationship in the population or is just due to chance.</li>
+                <li>The logic of null hypothesis testing involves assuming that the null hypothesis is true, finding how likely the sample result would be if this assumption were correct, and then making a decision. If the sample result would be unlikely if the null hypothesis were true, then it is rejected in favor of the alternative hypothesis. If it would not be unlikely, then the null hypothesis is retained.</li>
+                <li>The probability of obtaining the sample result if the null hypothesis were true (the <em class="emphasis">p</em> value) is based on two considerations: relationship strength and sample size. Reasonable judgments about whether a sample relationship is statistically significant can often be made by quickly considering these two factors.</li>
+                <li>Statistical significance is not the same as relationship strength or importance. Even weak relationships can be statistically significant if the sample size is large enough. It is important to consider relationship strength and the practical significance of a result in addition to its statistical significance.</li>
+            </ul>
+        </div>
+        <div class="exercises editable block" id="price_1.0-ch13_s01_s04_n02">
+            <h3 class="title">Exercises</h3>
+            <ol class="orderedlist" id="price_1.0-ch13_s01_s04_l02">
+                <li>Discussion: Imagine a study showing that people who eat more broccoli tend to be happier. Explain for someone who knows nothing about statistics why the researchers would conduct a null hypothesis test.</li>
+                <li>
+                    <p class="para">Practice: Use <a class="xref" href="#price_1.0-ch13_s01_s03_t01">Table 13.1 "How Relationship Strength and Sample Size Combine to Determine Whether a Result Is Statistically Significant"</a> to decide whether each of the following results is statistically significant.</p>
+                    <ol class="orderedlist" id="price_1.0-ch13_s01_s04_l03" numeration="loweralpha">
+                        <li>The correlation between two variables is <em class="emphasis">r</em> = −.78 based on a sample size of 137.</li>
+                        <li>The mean score on a psychological characteristic for women is 25 (<em class="emphasis">SD</em> = 5) and the mean score for men is 24 (<em class="emphasis">SD</em> = 5). There were 12 women and 10 men in this study.</li>
+                        <li>In a memory experiment, the mean number of items recalled by the 40 participants in Condition A was 0.50 standard deviations greater than the mean number recalled by the 40 participants in Condition B.</li>
+                        <li>In another memory experiment, the mean scores for participants in Condition A and Condition B came out exactly the same!</li>
+                        <li>A student finds a correlation of <em class="emphasis">r</em> = .04 between the number of units the students in his research methods class are taking and the students’ level of stress.</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s16-04-conducting-your-analyses.html"><img src="shared/images/batch-left.png"></a> <a href="s16-04-conducting-your-analyses.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s17-02-some-basic-null-hypothesis-tes.html">Next Section</a> <a href="s17-02-some-basic-null-hypothesis-tes.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

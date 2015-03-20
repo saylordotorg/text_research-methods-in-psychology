@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Additional Considerations</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s17-02-some-basic-null-hypothesis-tes.html"><img src="shared/images/batch-left.png"></a> <a href="s17-02-some-basic-null-hypothesis-tes.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        &nbsp;
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="price_1.0-ch13_s03" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">13.3</span> Additional Considerations</h2>
+    <div class="learning_objectives editable block" id="price_1.0-ch13_s03_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="price_1.0-ch13_s03_l01">
+            <li>Define Type I and Type II errors, explain why they occur, and identify some steps that can be taken to minimize their likelihood.</li>
+            <li>Define statistical power, explain its role in the planning of new studies, and use online tools to compute the statistical power of simple research designs.</li>
+            <li>List some criticisms of conventional null hypothesis testing, along with some ways of dealing with these criticisms.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="price_1.0-ch13_s03_p01">In this section, we consider a few other issues related to null hypothesis testing, including some that are useful in planning studies and interpreting results. We even consider some long-standing criticisms of null hypothesis testing, along with some steps that researchers in psychology have taken to address them.</p>
+    <div class="section" id="price_1.0-ch13_s03_s01">
+        <h2 class="title editable block">Errors in Null Hypothesis Testing</h2>
+        <p class="para editable block" id="price_1.0-ch13_s03_s01_p01">In null hypothesis testing, the researcher tries to draw a reasonable conclusion about the population based on the sample. Unfortunately, this conclusion is not guaranteed to be correct. This is illustrated by <a class="xref" href="#price_1.0-ch13_s03_s01_f01">Figure 13.3 "Two Types of Correct Decisions and Two Types of Errors in Null Hypothesis Testing"</a>. The rows of this table represent the two possible decisions that we can make in null hypothesis testing: to reject or retain the null hypothesis. The columns represent the two possible states of the world: The null hypothesis is false or it is true. The four cells of the table, then, represent the four distinct outcomes of a null hypothesis test. Two of the outcomes—rejecting the null hypothesis when it is false and retaining it when it is true—are correct decisions. The other two—rejecting the null hypothesis when it is true and retaining it when it is false—are errors.</p>
+        <div class="figure large editable block" id="price_1.0-ch13_s03_s01_f01">
+            <p class="title"><span class="title-prefix">Figure 13.3</span> Two Types of Correct Decisions and Two Types of Errors in Null Hypothesis Testing</p>
+            <img src="section_17/7fa8ae13dd537403f0205d33722c62fc.jpg">
+        </div>
+        <p class="para editable block" id="price_1.0-ch13_s03_s01_p02">Rejecting the null hypothesis when it is true is called a <span class="margin_term"><a class="glossterm">Type I error</a><span class="glossdef">In null hypothesis testing, rejecting the null hypothesis when it is true.</span></span>. This means that we have concluded that there is a relationship in the population when in fact there is not. Type I errors occur because even when there is no relationship in the population, sampling error alone will occasionally produce an extreme result. In fact, when the null hypothesis is true and α is .05, we will mistakenly reject the null hypothesis 5% of the time. (This is why α is sometimes referred to as the “Type I error rate.”) Retaining the null hypothesis when it is false is called a <span class="margin_term"><a class="glossterm">Type II error</a><span class="glossdef">In null hypothesis testing, failing to reject the null hypothesis when it is false.</span></span>. This means that we have concluded that there is no relationship in the population when in fact there is. In practice, Type II errors occur primarily because the research design lacks adequate statistical power to detect the relationship (e.g., the sample is too small). We will have more to say about statistical power shortly.</p>
+        <p class="para editable block" id="price_1.0-ch13_s03_s01_p03">In principle, it is possible to reduce the chance of a Type I error by setting α to something less than .05. Setting it to .01, for example, would mean that if the null hypothesis is true, then there is only a 1% chance of mistakenly rejecting it. But making it harder to reject true null hypotheses also makes it harder to reject false ones and therefore increases the chance of a Type II error. Similarly, it is possible to reduce the chance of a Type II error by setting α to something greater than .05 (e.g., .10). But making it easier to reject false null hypotheses also makes it easier to reject true ones and therefore increases the chance of a Type I error. This provides some insight into why the convention is to set α to .05. There is some agreement among researchers that level of α keeps the rates of both Type I and Type II errors at acceptable levels.</p>
+        <p class="para editable block" id="price_1.0-ch13_s03_s01_p04">The possibility of committing Type I and Type II errors has several important implications for interpreting the results of our own and others’ research. One is that we should be cautious about interpreting the results of any individual study because there is a chance that it reflects a Type I or Type II error. This is why researchers consider it important to replicate their studies. Each time researchers replicate a study and find a similar result, they rightly become more confident that the result represents a real phenomenon and not just a Type I or Type II error.</p>
+        <p class="para editable block" id="price_1.0-ch13_s03_s01_p05">Another issue related to Type I errors is the so-called <span class="margin_term"><a class="glossterm">file drawer problem</a><span class="glossdef">The fact that statistically significant results are more likely to be submitted and accepted for publication than nonsignificant results.</span></span> (Rosenthal, 1979).<span class="footnote" id="price_1.0-fn13_005">Rosenthal, R. (1979). The file drawer problem and tolerance for null results. <em class="emphasis">Psychological Bulletin</em>, <em class="emphasis">83</em>, 638–641.</span> The idea is that when researchers obtain statistically significant results, they tend to submit them for publication, and journal editors and reviewers tend to accept them. But when researchers obtain nonsignificant results, they tend not to submit them for publication, or if they do submit them, journal editors and reviewers tend not to accept them. Researchers end up putting these nonsignificant results away in a file drawer (or nowadays, in a folder on their hard drive). One effect of this is that the published literature probably contains a higher proportion of Type I errors than we might expect on the basis of statistical considerations alone. Even when there is a relationship between two variables in the population, the published research literature is likely to overstate the strength of that relationship. Imagine, for example, that the relationship between two variables in the population is positive but weak (e.g., ρ = +.10). If several researchers conduct studies on this relationship, sampling error is likely to produce results ranging from weak negative relationships (e.g., <em class="emphasis">r</em> = −.10) to moderately strong positive ones (e.g., <em class="emphasis">r</em> = +.40). But because of the file drawer problem, it is likely that only those studies producing moderate to strong positive relationships are published. The result is that the effect reported in the published literature tends to be stronger than it really is in the population.</p>
+        <p class="para editable block" id="price_1.0-ch13_s03_s01_p06">The file drawer problem is a difficult one because it is a product of the way scientific research has traditionally been conducted and published. One solution might be for journal editors and reviewers to evaluate research submitted for publication without knowing the results of that research. The idea is that if the research question is judged to be interesting and the method judged to be sound, then a nonsignificant result should be just as important and worthy of publication as a significant one. Short of such a radical change in how research is evaluated for publication, researchers can still take pains to keep their nonsignificant results and share them as widely as possible (e.g., at professional conferences). Many scientific disciplines now have journals devoted to publishing nonsignificant results. In psychology, for example, there is the <em class="emphasis">Journal of Articles in Support of the Null Hypothesis</em> (<a class="link" target="_blank" href="http://www.jasnh.com">http://www.jasnh.com</a>).</p>
+    </div>
+    <div class="section" id="price_1.0-ch13_s03_s02">
+        <h2 class="title editable block">Statistical Power</h2>
+        <p class="para editable block" id="price_1.0-ch13_s03_s02_p01">The <span class="margin_term"><a class="glossterm">statistical power</a><span class="glossdef">The probability of rejecting the null hypothesis for a given sample size and expected relationship strength.</span></span> of a research design is the probability of rejecting the null hypothesis given the sample size and expected relationship strength. For example, the statistical power of a study with 50 participants and an expected Pearson’s <em class="emphasis">r</em> of +.30 in the population is .59. That is, there is a 59% chance of rejecting the null hypothesis if indeed the population correlation is +.30. Statistical power is the complement of the probability of committing a Type II error. So in this example, the probability of committing a Type II error would be 1 − .59 = .41. Clearly, researchers should be interested in the power of their research designs if they want to avoid making Type II errors. In particular, they should make sure their research design has adequate power before collecting data. A common guideline is that a power of .80 is adequate. This means that there is an 80% chance of rejecting the null hypothesis for the expected relationship strength.</p>
+        <p class="para editable block" id="price_1.0-ch13_s03_s02_p02">The topic of how to compute power for various research designs and null hypothesis tests is beyond the scope of this book. However, there are online tools that allow you to do this by entering your sample size, expected relationship strength, and α level for various hypothesis tests (see “Computing Power Online”). In addition, <a class="xref" href="#price_1.0-ch13_s03_s02_t01">Table 13.6 "Sample Sizes Needed to Achieve Statistical Power of .80 for Different Expected Relationship Strengths for an Independent-Samples "</a> shows the sample size needed to achieve a power of .80 for weak, medium, and strong relationships for a two-tailed independent-samples <em class="emphasis">t</em> test and for a two-tailed test of Pearson’s <em class="emphasis">r</em>. Notice that this table amplifies the point made earlier about relationship strength, sample size, and statistical significance. In particular, weak relationships require very large samples to provide adequate statistical power.</p>
+        <div class="table block" id="price_1.0-ch13_s03_s02_t01" frame="all">
+            <p class="title"><span class="title-prefix">Table 13.6</span> Sample Sizes Needed to Achieve Statistical Power of .80 for Different Expected Relationship Strengths for an Independent-Samples <em class="emphasis">t</em> Test and a Test of Pearson’s <em class="emphasis">r</em></p>
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th colspan="3">Null Hypothesis Test</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Relationship Strength</td>
+                        <td>Independent-Samples <em class="emphasis">t</em> Test</td>
+                        <td>Test of Pearson’s <em class="emphasis">r</em>
+</td>
+                    </tr>
+                    <tr>
+                        <td>Strong (<em class="emphasis">d</em> = .80, <em class="emphasis">r</em> = .50)</td>
+                        <td align="right">52</td>
+                        <td align="right">28</td>
+                    </tr>
+                    <tr>
+                        <td>Medium (<em class="emphasis">d</em> = .50, <em class="emphasis">r</em> = .30)</td>
+                        <td align="right">128</td>
+                        <td align="right">84</td>
+                    </tr>
+                    <tr>
+                        <td>Weak (<em class="emphasis">d</em> = .20, <em class="emphasis">r</em> = .10)</td>
+                        <td align="right">788</td>
+                        <td align="right">782</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="para editable block" id="price_1.0-ch13_s03_s02_p03">What should you do if you discover that your research design does not have adequate power? Imagine, for example, that you are conducting a between-subjects experiment with 20 participants in each of two conditions and that you expect a medium difference (<em class="emphasis">d</em> = .50) in the population. The statistical power of this design is only .34. That is, even if there is a medium difference in the population, there is only about a one in three chance of rejecting the null hypothesis and about a two in three chance of committing a Type II error. Given the time and effort involved in conducting the study, this probably seems like an unacceptably low chance of rejecting the null hypothesis and an unacceptably high chance of committing a Type II error.</p>
+        <p class="para editable block" id="price_1.0-ch13_s03_s02_p04">Given that statistical power depends primarily on relationship strength and sample size, there are essentially two steps you can take to increase statistical power: increase the strength of the relationship or increase the sample size. Increasing the strength of the relationship can sometimes be accomplished by using a stronger manipulation or by more carefully controlling extraneous variables to reduce the amount of noise in the data (e.g., by using a within-subjects design rather than a between-subjects design). The usual strategy, however, is to increase the sample size. For any expected relationship strength, there will always be some sample large enough to achieve adequate power.</p>
+        <div class="callout editable block" id="price_1.0-ch13_s03_s02_n01">
+            <h3 class="title">Computing Power Online</h3>
+            <p class="para" id="price_1.0-ch13_s03_s02_p05">The following links are to tools that allow you to compute statistical power for various research designs and null hypothesis tests by entering information about the expected relationship strength, the sample size, and the α level. They also allow you to compute the sample size necessary to achieve your desired level of power (e.g., .80). The first is an online tool. The second is a free downloadable program called G*Power.</p>
+            <ul class="itemizedlist" id="price_1.0-ch13_s03_s02_l01">
+                <li>Russ Lenth’s Power and Sample Size Page: <a class="link" target="_blank" href="http://www.stat.uiowa.edu/~rlenth/Power/index.html">http://www.stat.uiowa.edu/~rlenth/Power/index.html</a>
+</li>
+                <li>G*Power: <a class="link" target="_blank" href="http://www.psycho.uni-duesseldorf.de/aap/projects/gpower">http://www.psycho.uni-duesseldorf.de/aap/projects/gpower</a>
+</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section" id="price_1.0-ch13_s03_s03">
+        <h2 class="title editable block">Problems With Null Hypothesis Testing, and Some Solutions</h2>
+        <p class="para editable block" id="price_1.0-ch13_s03_s03_p01">Again, null hypothesis testing is the most common approach to inferential statistics in psychology. It is not without its critics, however. In fact, in recent years the criticisms have become so prominent that the American Psychological Association convened a task force to make recommendations about how to deal with them (Wilkinson &amp; Task Force on Statistical Inference, 1999).<span class="footnote" id="price_1.0-fn13_006">Wilkinson, L., &amp; Task Force on Statistical Inference. (1999). Statistical methods in psychology journals: Guidelines and explanations. <em class="emphasis">American Psychologist</em>, <em class="emphasis">54</em>, 594–604.</span> In this section, we consider some of the criticisms and some of the recommendations.</p>
+        <div class="section" id="price_1.0-ch13_s03_s03_s01">
+            <h2 class="title editable block">Criticisms of Null Hypothesis Testing</h2>
+            <p class="para editable block" id="price_1.0-ch13_s03_s03_s01_p01">Some criticisms of null hypothesis testing focus on researchers’ misunderstanding of it. We have already seen, for example, that the <em class="emphasis">p</em> value is widely misinterpreted as the probability that the null hypothesis is true. (Recall that it is really the probability of the sample result <em class="emphasis">if</em> the null hypothesis were true.) A closely related misinterpretation is that 1 − <em class="emphasis">p</em> is the probability of replicating a statistically significant result. In one study, 60% of a sample of professional researchers thought that a <em class="emphasis">p</em> value of .01—for an independent-samples <em class="emphasis">t</em> test with 20 participants in each sample—meant there was a 99% chance of replicating the statistically significant result (Oakes, 1986).<span class="footnote" id="price_1.0-fn13_007">Oakes, M. (1986). <em class="emphasis">Statistical inference: A commentary for the social and behavioral sciences</em>. Chichester, UK: Wiley.</span> Our earlier discussion of power should make it clear that this is far too optimistic. As <a class="xref" href="price_1.0-ch13_s02#price_1.0-ch13_s02_s03_t01">Table 13.5 "Table of Critical Values of Pearson’s "</a> shows, even if there were a large difference between means in the population, it would require 26 participants per sample to achieve a power of .80. And the program G*Power shows that it would require 59 participants per sample to achieve a power of .99.</p>
+            <p class="para editable block" id="price_1.0-ch13_s03_s03_s01_p02">Another set of criticisms focuses on the logic of null hypothesis testing. To many, the strict convention of rejecting the null hypothesis when <em class="emphasis">p</em> is less than .05 and retaining it when <em class="emphasis">p</em> is greater than .05 makes little sense. This criticism does not have to do with the specific value of .05 but with the idea that there should be any rigid dividing line between results that are considered significant and results that are not. Imagine two studies on the same statistical relationship with similar sample sizes. One has a <em class="emphasis">p</em> value of .04 and the other a <em class="emphasis">p</em> value of .06. Although the two studies have produced essentially the same result, the former is likely to be considered interesting and worthy of publication and the latter simply not significant. This convention is likely to prevent good research from being published and to contribute to the file drawer problem.</p>
+            <p class="para editable block" id="price_1.0-ch13_s03_s03_s01_p03">Yet another set of criticisms focus on the idea that null hypothesis testing—even when understood and carried out correctly—is simply not very informative. Recall that the null hypothesis is that there is no relationship between variables in the population (e.g., Cohen’s <em class="emphasis">d</em> or Pearson’s <em class="emphasis">r</em> is precisely 0). So to reject the null hypothesis is simply to say that there is <em class="emphasis">some</em> nonzero relationship in the population. But this is not really saying very much. Imagine if chemistry could tell us only that there is <em class="emphasis">some</em> relationship between the temperature of a gas and its volume—as opposed to providing a precise equation to describe that relationship. Some critics even argue that the relationship between two variables in the population is never precisely 0 if it is carried out to enough decimal places. In other words, the null hypothesis is never literally true. So rejecting it does not tell us anything we did not already know!</p>
+            <p class="para editable block" id="price_1.0-ch13_s03_s03_s01_p04">To be fair, many researchers have come to the defense of null hypothesis testing. One of them, Robert Abelson, has argued that when it is correctly understood and carried out, null hypothesis testing does serve an important purpose (Abelson, 1995).<span class="footnote" id="price_1.0-fn13_008">Abelson, R. P. (1995). <em class="emphasis">Statistics as principled argument</em>. Mahwah, NJ: Erlbaum.</span> Especially when dealing with new phenomena, it gives researchers a principled way to convince others that their results should not be dismissed as mere chance occurrences.</p>
+        </div>
+        <div class="section" id="price_1.0-ch13_s03_s03_s02">
+            <h2 class="title editable block">What to Do?</h2>
+            <p class="para editable block" id="price_1.0-ch13_s03_s03_s02_p01">Even those who defend null hypothesis testing recognize many of the problems with it. But what should be done? Some suggestions now appear in the <em class="emphasis">Publication Manual</em>. One is that each null hypothesis test should be accompanied by an effect size measure such as Cohen’s <em class="emphasis">d</em> or Pearson’s <em class="emphasis">r</em>. By doing so, the researcher provides an estimate of how strong the relationship in the population is—not just whether there is one or not. (Remember that the <em class="emphasis">p</em> value cannot substitute as a measure of relationship strength because it also depends on the sample size. Even a very weak result can be statistically significant if the sample is large enough.)</p>
+            <p class="para editable block" id="price_1.0-ch13_s03_s03_s02_p02">Another suggestion is to use confidence intervals rather than null hypothesis tests. A <span class="margin_term"><a class="glossterm">confidence interval</a><span class="glossdef">A range of values computed in such a way that some specified percentage of the time (usually 95%) the population parameter of interest will lie within that range.</span></span> around a statistic is a range of values that is computed in such a way that some percentage of the time (usually 95%) the population parameter will lie within that range. For example, a sample of 20 college students might have a mean calorie estimate for a chocolate chip cookie of 200 with a 95% confidence interval of 160 to 240. In other words, there is a very good chance that the mean calorie estimate for the population of college students lies between 160 and 240. Advocates of confidence intervals argue that they are much easier to interpret than null hypothesis tests. Another advantage of confidence intervals is that they provide the information necessary to do null hypothesis tests should anyone want to. In this example, the sample mean of 200 is significantly different at the .05 level from any hypothetical population mean that lies outside the confidence interval. So the confidence interval of 160 to 240 tells us that the sample mean is statistically significantly different from a hypothetical population mean of 250.</p>
+            <p class="para editable block" id="price_1.0-ch13_s03_s03_s02_p03">Finally, there are more radical solutions to the problems of null hypothesis testing that involve using very different approaches to inferential statistics. <span class="margin_term"><a class="glossterm">Bayesian statistics</a><span class="glossdef">An alternative approach to inferential statistics in which the researcher specifies the probability that the null hypothesis and important alternative hypotheses are true before conducting a study, conducts the study, and then computes revised probabilities based on the data.</span></span>, for example, is an approach in which the researcher specifies the probability that the null hypothesis and any important alternative hypotheses are true before conducting the study, conducts the study, and then updates the probabilities based on the data. It is too early to say whether this approach will become common in psychological research. For now, null hypothesis testing—supported by effect size measures and confidence intervals—remains the dominant approach.</p>
+            <div class="key_takeaways editable block" id="price_1.0-ch13_s03_s03_s02_n01">
+                <h3 class="title">Key Takeaways</h3>
+                <ul class="itemizedlist" id="price_1.0-ch13_s03_s03_s02_l01">
+                    <li>The decision to reject or retain the null hypothesis is not guaranteed to be correct. A Type I error occurs when one rejects the null hypothesis when it is true. A Type II error occurs when one fails to reject the null hypothesis when it is false.</li>
+                    <li>The statistical power of a research design is the probability of rejecting the null hypothesis given the expected relationship strength in the population and the sample size. Researchers should make sure that their studies have adequate statistical power before conducting them.</li>
+                    <li>Null hypothesis testing has been criticized on the grounds that researchers misunderstand it, that it is illogical, and that it is uninformative. Others argue that it serves an important purpose—especially when used with effect size measures, confidence intervals, and other techniques. It remains the dominant approach to inferential statistics in psychology.</li>
+                </ul>
+            </div>
+            <div class="exercises editable block" id="price_1.0-ch13_s03_s03_s02_n02">
+                <h3 class="title">Exercises</h3>
+                <ol class="orderedlist" id="price_1.0-ch13_s03_s03_s02_l02">
+                    <li>
+                        <p class="para">Discussion: A researcher compares the effectiveness of two forms of psychotherapy for social phobia using an independent-samples <em class="emphasis">t</em> test.</p>
+                        <ol class="orderedlist" id="price_1.0-ch13_s03_s03_s02_l03" numeration="loweralpha">
+                            <li>Explain what it would mean for the researcher to commit a Type I error.</li>
+                            <li>Explain what it would mean for the researcher to commit a Type II error.</li>
+                        </ol>
+                    </li>
+                    <li>Discussion: Imagine that you conduct a <em class="emphasis">t</em> test and the <em class="emphasis">p</em> value is .02. How could you explain what this <em class="emphasis">p</em> value means to someone who is not already familiar with null hypothesis testing? Be sure to avoid the common misinterpretations of the <em class="emphasis">p</em> value.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s17-02-some-basic-null-hypothesis-tes.html"><img src="shared/images/batch-left.png"></a> <a href="s17-02-some-basic-null-hypothesis-tes.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        &nbsp;
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>
